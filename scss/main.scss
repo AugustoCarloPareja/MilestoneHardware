@@ -1,0 +1,278 @@
+// Variables Globales
+
+$color-White: white;
+$color-ULight: #c4eedf;
+$color-Light: #9ce2ca;
+$color-Normal:#4ecba0;
+$color-Dark: #288a69;
+$color-UDark: #113b2d;
+$color-Black: black;
+$color-red: #861010;
+$color-green: #3d8d41;
+$color-grey: #727272;
+$color-reset: #ac5858;
+$fontSizeConstruccion: 15px;
+$heightConstruccion: 5vh;
+
+
+// MIXINS SASS
+
+@mixin centradoFlex {
+    // Flex
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+
+@mixin pag-construccion {
+    background-image: linear-gradient(30deg, $color-Normal 40%, $color-ULight 80%);
+    letter-spacing: 5px;
+    font-weight: bold;
+    color: $color-grey;
+}
+
+// OPERACION SIMPLE EN SASS - Página en Construcción
+
+.construccion {
+    @include pag-construccion;
+    @include centradoFlex;
+    font-size: ($fontSizeConstruccion / 2) * 5;
+    height: $heightConstruccion * 15;
+}
+
+
+// Para todo el HTML - Responsive
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+// Letra definida para todo el Body
+
+body {
+    font-family: 'DM Sans', sans-serif;
+}
+
+// Colores 
+
+.colorWhite {
+    color: $color-White;
+}
+
+.colorUltraLight {
+    color: $color-ULight;
+}
+
+.colorLight {
+    color: $color-Light;
+}
+
+.colorNormal {
+    color: $color-Normal;
+}
+
+.colorDark {
+    color: $color-Dark;
+}
+
+.colorUltraDark {
+    color: $color-UDark;
+}
+
+.colorBlack {
+    color: $color-Black;
+}
+// Colores Background
+.colorBGWhite {
+    background-color: $color-White;
+}
+
+.colorBGUltraLight {
+    background-color: $color-ULight;
+}
+
+.colorBGLight {
+    background-color: $color-Light;
+}
+
+.colorBGNormal {
+    background-color: $color-Normal;
+}
+
+.colorBGDark {
+    background-color: $color-Dark;
+}
+
+.colorBGUltraDark {
+    background-color: $color-UDark;
+}
+
+.colorBGBlack {
+    background-color: $color-Black;
+}
+
+// Gradientes de colores
+
+.backgroundGradient {
+    background-image: linear-gradient(180deg, $color-Normal 40%, $color-ULight 80%);
+}
+
+
+// Barra de Navegación
+
+.navbar-brand {
+    font-size: 35px;
+}
+
+.colorNavBar {
+    padding: 15px;
+    color: #ffffff;
+    background-color: $color-Dark;
+    border-radius: 5px; 
+    text-align: center;
+    &:hover {
+        background-color: $color-UDark;
+        color: $color-White;
+        text-decoration: none;
+    }
+}
+
+// Barra de búsqueda
+
+.inputBusqueda {
+    width: 50%;
+    height: 30px;
+    margin-right: 15px;
+    text-align: left;
+    color: rgb(37, 37, 49); 
+    font-size: 15px;
+}
+
+.botonBusqueda {
+    height: 30px;
+    width: 100px;
+}
+                                
+// Inicio Lista de productos
+.productos {
+    @include centradoFlex;
+    font-size: 15px;
+    text-align: center;
+    padding: 25px;
+    // GRID
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+//  Para sacar las viñetas y/o numeraciones
+ul ol li {
+    list-style: none;
+}
+
+// Para agrandar el botón de buscar en index
+.btn {
+    margin: 15px;
+}
+
+// Para alinear el texto de todas las row
+.row {
+    text-align: center;
+}
+
+// Para darle forma al área de texto de consulta
+input[type=text], select, textarea { 
+    width: 100%;
+    padding: 15px;
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 16px; 
+    resize: vertical;
+}
+
+// Para darle forma al área del texto de correo
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 16px; 
+    resize: vertical
+}
+  
+// Para darle color y forma al Enviar
+input[type=submit] {
+    background-color: $color-grey;
+    color: $color-White;
+    padding: 15px 100px;
+    margin: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $color-green;
+    }
+}
+  
+// Para darle color y forma al Limpiar consulta
+input[type=reset] {
+    background-color: $color-reset;
+    color: $color-White;
+    padding: 15px 30px;
+    margin: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover{
+        background-color: $color-red;
+    }
+}
+// Fin formulario de contacto en contacto.html
+
+
+// footer con Metodología BEM
+
+.footer_redes {
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    background: $color-Dark; 
+    text-align: center; 
+    color: $color-White;
+
+    &--header {
+        padding: 10px;
+        }
+
+    &--content {
+        padding: 10px;
+
+        &--links {
+            padding: 15px;
+            width: 75px;
+            color: white;
+            cursor: pointer;
+            }
+            
+            a:hover {
+                text-decoration: none;
+                color: $color-UDark;
+            }
+
+        & label {
+            font-size: 20px;
+            }
+        }
+
+    &--autor{
+        text-align: right;
+        font-size: 15px;
+        font-family: 'Teko', sans-serif;
+        text-shadow: 2px 2px 2px $color-grey;
+    }
+}

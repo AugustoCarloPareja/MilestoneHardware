@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- SEO para la WEB donde se coloca lo principal - Descripción, TAGS, language, URL -->
+        <title>Milestone Hardware</title>
+        <meta name="description" content="Esta es una empresa dedicada a la venta de hardware de todo tipo, radicada en la localidad de Córdoba, Argentina. ¡Visítanos!">
+        <meta name="keywords" content="Venta, Hardware, Argentina, Córdoba">
+        <meta meta="author" content="Augusto Pareja">
+        <!-- Open graph -->
+        <meta property="og:locale" content="Es_es">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Milestone Hardware">
+        <meta property="og:description" content="Venta de Hardware, Milestone Hardware">
+        <meta property="og:url" content="https://milestonehardware.com.ar/index.html">
+
+        <!-- Boostrap CSS-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Estilos propios-->
+        <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    </head>
+    <body>  
+        <!-- BOOSTRAP Header con barra de navegación colapsable -->
+        <header id="main-header" class="colorBGDark sticky-top">
+            <div class="container-fluid">
+                <!-- BOOTSTRAP La idea es tener un container-fluid que abarque todo, y otro container para centralizar-->
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <span class="navbar-brand">
+                            <a href="index.html">
+                                <img class="img-fluid d-inline-block align-top" style="max-width: 250px;" button type="button" href="index.html" src="./img/logoMH.png" alt="Logo Milestone Hardware">
+                            </a>
+                        </span>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicNavBar" aria-controls="basicNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>                    
+                        <div class="collapse navbar-collapse" id="basicNavBar">
+                            <div class="mr-auto ml-auto navbar-nav">
+                                <a href="index.html" class="nav-item colorNavBar">Inicio</a>
+                                <a href="secciones/quienesSomos.html" class="nav-item colorNavBar">Quienes somos</a>
+                                <a href="secciones/contacto.html" class="nav-item colorNavBar">Contacto</a>
+                                <a href="secciones/comoComprar.html" class="nav-item colorNavBar">Como comprar</a>
+                                <a href="secciones/ofertas.html" class="nav-item colorNavBar">¡Ofertas!</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+       <!-- Main-->
+        <div class="container-fluid colorBGWhite backgroundGradient">   
+            <main>
+                <!-- BOOSTRAP-  Barra de búsqueda sin acción (#)-->
+                <div class="container">
+                    <div class="row">
+                        <form action="#" class="col-12 d-sm-inline-flex">
+                            <input type="text" class="form-control colorBGUltraLight" placeholder="¿Qué buscas?" required name="search">
+                            <button class="btn btn-outline-success" type="search"><i>Buscar</i></button>                                       
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- BOOTSTRAP - Listado para filtar -->
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <a class="btn btn-secondary colorNavBar" href="#">Motherboards</a>
+                        <a class="btn btn-secondary colorNavBar" href="#">Memories</a>
+                        <a class="btn btn-secondary colorNavBar" href="#">Videocards</a>
+                        <a class="btn btn-secondary colorNavBar" href="#">HardDiskDrives</a>
+                        <a class="btn btn-secondary colorNavBar" href="#">SolidStateDrives</a>
+                        <a class="btn btn-secondary colorNavBar" href="#">Otros</a>
+                    </div>
+                </div>
+                
+                <!-- BOOTSTRAP - Cartas e inventario -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 mb-5 d-flex justify-content-center">
+                            <div class="card" style="width: 30rem;">
+                                <img src="img/motherboards/mb-asus1151-atx.png" class="card-img-top p-3" alt="Placa Madre Asus 1151 ATX>
+                                <div class="card-body">
+                                <a href="#" class="btn btn-outline-secondary p-3">¿CONOCES NUESTRO STOCK?</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/motherboards/mb-asus1151-atx.png" class="card-img-top p-3" height="250" alt="Placa Madre Asus 1151 ATX>
+                                <div class="card-body">
+                                <h5 class="card-title pt-3">Placa Madre Asus 1151 ATX</h5>
+                                <p class="card-text pl-3 pr-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos esse, nihil nisi totam nam architecto commodi temporibus maiores placeat fugit nostrum ducimus amet porro. Obcaecati ea ipsam magnam nam iusto.
+                                <div class="card-footer">
+                                    <p>Precio: $ 333333</p>
+                                    <button type="button" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/motherboards/mb-1150-asrock-fatal1ty.png" class="card-img-top p-3" height="250" alt="Placa Madre 1150 Asrock Fatal1ty>
+                                <div class="card-body">
+                                <h5 class="card-title pt-3">Placa Madre Asus 1151 ATX</h5>
+                                <p class="card-text pl-3 pr-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos esse, nihil nisi totam nam architecto commodi temporibus maiores placeat fugit nostrum ducimus amet porro. Obcaecati ea ipsam magnam nam iusto.
+                                <div class="card-footer">
+                                    <p>Precio: $ 333333</p>
+                                    <button type="button" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/motherboards/mb-msi-b85-g43.png" class="card-img-top p-3" height="250" alt="Placa Madre MSI B85-G43>
+                                <div class="card-body">
+                                <h5 class="card-title pt-3">Placa Madre Asus 1151 ATX</h5>
+                                <p class="card-text pl-3 pr-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos esse, nihil nisi totam nam architecto commodi temporibus maiores placeat fugit nostrum ducimus amet porro. Obcaecati ea ipsam magnam nam iusto.
+                                <div class="card-footer">
+                                    <p>Precio: $ 333333</p>
+                                    <button type="button" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/motherboards/mb-msi-lga-1150.png" class="card-img-top p-3" height="250" alt="Placa madre MSI LGA 1150>
+                                <div class="card-body">
+                                <h5 class="card-title pt-3">Placa Madre Asus 1151 ATX</h5>
+                                <p class="card-text pl-3 pr-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos esse, nihil nisi totam nam architecto commodi temporibus maiores placeat fugit nostrum ducimus amet porro. Obcaecati ea ipsam magnam nam iusto.
+                                <div class="card-footer">
+                                    <p>Precio: $ 333333</p>
+                                    <button type="button" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/motherboards/mb-asus1151-atx.png" class="card-img-top p-3" height="250" alt="Placa Madre Asus 1151 ATX>
+                                <div class="card-body">
+                                <h5 class="card-title pt-3">Placa Madre Asus 1151 ATX</h5>
+                                <p class="card-text pl-3 pr-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos esse, nihil nisi totam nam architecto commodi temporibus maiores placeat fugit nostrum ducimus amet porro. Obcaecati ea ipsam magnam nam iusto.
+                                <div class="card-footer">
+                                    <p>Precio: $ 333333</p>
+                                    <button type="button" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/motherboards/mb-asus1151-atx.png" class="card-img-top p-3" height="250" alt="Placa Madre Asus 1151 ATX>
+                                <div class="card-body">
+                                <h5 class="card-title pt-3">Placa Madre Asus 1151 ATX</h5>
+                                <p class="card-text pl-3 pr-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos esse, nihil nisi totam nam architecto commodi temporibus maiores placeat fugit nostrum ducimus amet porro. Obcaecati ea ipsam magnam nam iusto.
+                                <div class="card-footer">
+                                    <p>Precio: $ 333333</p>
+                                    <button type="button" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/motherboards/mb-asus1151-atx.png" class="card-img-top p-3" height="250" alt="Placa Madre Asus 1151 ATX>
+                                <div class="card-body">
+                                <h5 class="card-title pt-3">Placa Madre Asus 1151 ATX</h5>
+                                <p class="card-text pl-3 pr-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos esse, nihil nisi totam nam architecto commodi temporibus maiores placeat fugit nostrum ducimus amet porro. Obcaecati ea ipsam magnam nam iusto.
+                                <div class="card-footer">
+                                    <p>Precio: $ 333333</p>
+                                    <button type="button" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/motherboards/mb-asus1151-atx.png" class="card-img-top p-3" height="250" alt="Placa Madre Asus 1151 ATX>
+                                <div class="card-body">
+                                <h5 class="card-title pt-3">Placa Madre Asus 1151 ATX</h5>
+                                <p class="card-text pl-3 pr-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos esse, nihil nisi totam nam architecto commodi temporibus maiores placeat fugit nostrum ducimus amet porro. Obcaecati ea ipsam magnam nam iusto.
+                                <div class="card-footer">
+                                    <p>Precio: $ 333333</p>
+                                    <button type="button" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card" style="width: 18rem;">
+                                <img src="img/motherboards/mb-asus1151-atx.png" class="card-img-top p-3" height="250" alt="Placa Madre Asus 1151 ATX>
+                                <div class="card-body">
+                                <h5 class="card-title pt-3">Placa Madre Asus 1151 ATX</h5>
+                                <p class="card-text pl-3 pr-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos esse, nihil nisi totam nam architecto commodi temporibus maiores placeat fugit nostrum ducimus amet porro. Obcaecati ea ipsam magnam nam iusto.
+                                <div class="card-footer">
+                                    <p>Precio: $ 333333</p>
+                                    <button type="button" class="btn btn-primary">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+            <!-- Aplicando Metodología BEM y SASS-->
+            <footer>
+                <div class="footer_redes">
+                    <div class="footer_redes--header">
+                        <h2>¡Conectate en nuestras redes!</h2>   
+                    </div>
+
+                    <div class="footer_redes--content">
+                        <a href="#" class="footer_redes--content--links" tittle="Facebook">
+                            <img src="img/redesSociales/facebook.png" button type="button" href="#"  alt="Logo de Facebook">
+                            <label>Facebook</label>
+                        </a>
+                        
+                        <a href="#" class="footer_redes--content--links" tittle="Facebook">
+                            <img src="img/redesSociales/instagram.png" button type="button" href="#"  alt="Logo de Facebook">
+                            <label>Instagram</label>
+                        </a>
+
+                        <a href="#" class="footer_redes--content--links" tittle="Facebook">
+                            <img src="img/redesSociales/twitter.png" button type="button" href="#"  alt="Logo de Facebook">
+                            <label>Twitter</label>
+                        </a>
+
+                        <a href="#" class="footer_redes--content--links" tittle="Facebook">
+                            <img src="img/redesSociales/youtube.png" button type="button" href="#"  alt="Logo de Facebook">
+                            <label>Youtube</label>
+                        </a>
+                    </div> 
+
+                    <div class="footer_redes--autor">
+                        <span>Created by Peladitus</span>
+                    </div>
+                </div>
+            </footer>
+
+        <!-- Scripts de JS-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function() {
+                $(".btn").click(function() {
+                // disable button
+                $(this).prop("disabled", true);
+                // add spinner to button
+                $(this).html(
+                    `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Cargando...`
+                );
+                });
+            });
+        </script>
+    </body>
+</html>
