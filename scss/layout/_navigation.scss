@@ -26,6 +26,9 @@
 .btn-outline-success {
     color: $color-White;
     border-color: $color-UDark;
+    &:hover{
+        background-color: $color-green;
+    }
 }
 
 .colorSearchBar {

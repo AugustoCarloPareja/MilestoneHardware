@@ -1,19 +1,30 @@
 // Cards
 .card {
     background-size: cover;
+    width: 25rem;
+    box-shadow: 5px 5px 3px $color-UDark;
 
-    .card-img-top {
-        max-height: 180px;
-        width: auto;
-        overflow:hidden;
-        background-size: cover;
-        object-fit: fill;
-        
+    img{
+        width: 100%;
+        max-height: 250px;
+        object-fit: scale-down;
+        object-position: center center;
+      }
 
-        &:hover{
-            transition: all 1.9s ease;
-            transform:scale(1.25);
-        }
+
+    .tituloHardware{
+        font-size: 20px;
+        font-family: 'Merriweather Sans', sans-serif bold;
+        color: $color-UDark;
+        margin-top: 10px;
+        border-bottom: 3px solid $color-Normal;
+        border-top: 3px solid $color-Normal;
+    }
+    
+    .card-title {
+        @include centradoFlex;
+        height: 50px;
+        overflow: hidden;
     }
 
     .card-footer{
@@ -21,8 +32,9 @@
     }
 }
 
-.img-stock {
-    max-height: 10px;
+.titularPrecio {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
 }
 
 
@@ -33,11 +45,32 @@
         background-color: $color-Normal;
         border-color: $color-ULight;
         margin-top: 5px;
+        max-width: 150px;
+        max-height: auto;
+        font-size: 15px;
         
-        &:hover, &:focus, &:active {
+        &:hover, &:focus {
            background-color: $color-Dark; 
            border-color: $color-ULight;
            transition:(all .2s ease)
         }
+
+        &:active{
+            background-color: $color-UDark; 
+            border-color: $color-Light;
+        }
+    }
+    .shoppingItem{
+        @include centradoFlex;
+
+        img{
+            max-inline-size: 35px;
+        }
     }
 }
+
+.btn-primary:focus{
+    background-color: $color-Dark; 
+    border-color: $color-ULight;
+    box-shadow: $color-ULight;
+ }

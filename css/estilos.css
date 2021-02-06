@@ -14,6 +14,7 @@
 |   |– _forms.scss        # Forms
 |   |– _navigation.scss   # Barras de Navegación
 |   |– _cards.scss        # Cards
+|   |– _transitions.scss  # Transiciones / Zoom
 |
 |– pages/
 |   |– _index.scss        # index.html - Estilos específicos
@@ -125,6 +126,8 @@ input[type=reset] {
 .btn-outline-success {
   color: white;
   border-color: #304c4f; }
+  .btn-outline-success:hover {
+    background-color: #3d8d41; }
 
 .colorSearchBar {
   padding: 10px;
@@ -171,32 +174,71 @@ input[type=reset] {
   cursor: pointer; }
 
 .card {
-  background-size: cover; }
-  .card .card-img-top {
-    max-height: 180px;
-    width: auto;
-    overflow: hidden;
-    background-size: cover;
-    object-fit: fill; }
-    .card .card-img-top:hover {
-      transition: all 1.9s ease;
-      transform: scale(1.25); }
+  background-size: cover;
+  width: 25rem;
+  box-shadow: 5px 5px 3px #304c4f; }
+  .card img {
+    width: 100%;
+    max-height: 250px;
+    object-fit: scale-down;
+    object-position: center center; }
+  .card .tituloHardware {
+    font-size: 20px;
+    font-family: 'Merriweather Sans', sans-serif bold;
+    color: #304c4f;
+    margin-top: 10px;
+    border-bottom: 3px solid #57898e;
+    border-top: 3px solid #57898e; }
+  .card .card-title {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 50px;
+    overflow: hidden; }
   .card .card-footer {
     object-fit: fill; }
 
-.img-stock {
-  max-height: 10px; }
+.titularPrecio {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px; }
 
 .card-footer {
   background-color: #cee7e7; }
   .card-footer .btn-primary {
     background-color: #57898e;
     border-color: #90b7bb;
-    margin-top: 5px; }
-    .card-footer .btn-primary:hover, .card-footer .btn-primary:focus, .card-footer .btn-primary:active {
+    margin-top: 5px;
+    max-width: 150px;
+    max-height: auto;
+    font-size: 15px; }
+    .card-footer .btn-primary:hover, .card-footer .btn-primary:focus {
       background-color: #446a6f;
       border-color: #90b7bb;
       transition: all 0.2s ease; }
+    .card-footer .btn-primary:active {
+      background-color: #304c4f;
+      border-color: #71a2a8; }
+  .card-footer .shoppingItem {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-content: center; }
+    .card-footer .shoppingItem img {
+      max-inline-size: 35px; }
+
+.btn-primary:focus {
+  background-color: #446a6f;
+  border-color: #90b7bb;
+  box-shadow: #90b7bb; }
+
+.zoom {
+  width: 350px;
+  height: 200px;
+  transition: all .2s ease-in-out; }
+
+.transition {
+  transform: scale(1.8); }
 
 .productos {
   display: flex;
