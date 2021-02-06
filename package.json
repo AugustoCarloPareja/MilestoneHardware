@@ -1,5 +1,5 @@
 {
-  "name": "milestonehardwaresass",
+  "name": "milestonehardware",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,5 +13,13 @@
   "dependencies": {
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AugustoCarloPareja/MilestoneHardware.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AugustoCarloPareja/MilestoneHardware/issues"
+  },
+  "homepage": "https://github.com/AugustoCarloPareja/MilestoneHardware#readme"
 }
