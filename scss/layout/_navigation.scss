@@ -1,0 +1,42 @@
+// Barra de Navegación - Buttons
+.navbar-brand {
+    font-size: 35px;
+}
+
+.colorNavBar {
+    padding: 15px;
+    color: #ffffff;
+    background-color: $color-Dark;
+    border-radius: 5px; 
+    text-align: center;
+    &:hover {
+        background-color: $color-UDark;
+        color: $color-White;
+        text-decoration: none;
+    }
+}
+
+// Barra de búsqueda en INDEX
+
+.botonBusqueda {
+    height: 30px;
+    width: 100px;
+}
+
+.btn-outline-success {
+    color: $color-White;
+    border-color: $color-UDark;
+}
+
+.colorSearchBar {
+    padding: 10px;
+    color: #ffffff;
+    background-color: $color-Dark;
+    border-radius: 5px; 
+    text-align: center;
+    &:hover {
+        background-color: $color-UDark;
+        color: $color-White;
+        text-decoration: none;
+    }
+}

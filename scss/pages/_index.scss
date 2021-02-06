@@ -1,0 +1,10 @@
+// Lista de productos en INDEX
+.productos {
+    @include centradoFlex;
+    font-size: 15px;
+    text-align: center;
+    padding: 25px;
+    // GRID
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}

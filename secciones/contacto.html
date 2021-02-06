@@ -25,7 +25,7 @@
         <!-- Header con barra de navegación colapsable en Bootstrap-->
         <header id="main-header" class="colorBGDark sticky-top">
             <div class="container-fluid">
-                <!-- BOOTSTRAP La idea es tener un container-fluid que abarque todo, y otro container para centralizar-->
+                <!-- BOOTSTRAP Container-fluid que abarque todo, y otro container para centralizar-->
                 <div class="container">
                     <nav class="navbar navbar-expand-lg navbar-dark">
                         <span class="navbar-brand">
@@ -78,24 +78,24 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="nombre"><b>Nombre</b></label>
-                            <input id="nombre" class="form-control" type="text" name="Tu nombre" required placeholder="Tu nombre">
+                            <label for="form-nombre"><b>Nombre</b></label>
+                            <input id="form-nombre" class="form-control" type="text" name="form-nombre" required placeholder="Tu nombre" data-error="Por favor, escribe tu nombre">
                         </div>
 
                         <div class="form-group">
-                            <label for="apellido"><b>Apellido</b></label>
-                            <input id="apellido" class="form-control" type="text" name="apellido" required placeholder="Tu apellido">
+                            <label for="form_apellido"><b>Apellido</b></label>
+                            <input id="form-apellido" class="form-control" type="text" name="form-apellido" required placeholder="Tu apellido" data-error="Por favor, escribe tu apellido">
                         </div>
 
                         <div class="form-group">
-                            <label for="Correo electrónico"><b>Correo electrónico</b></label>
-                            <input id="email" class="form-control" type="email" name="correo" required placeholder="Tu correo">
+                            <label for="form-email"><b>Correo electrónico</b></label>
+                            <input id="form-email" class="form-control" type="email" name="form-email" required placeholder="Tu correo" data-error="Por favor, escribe tu correo electrónico">
                         </div>
 
 
                         <div class="form-group">
-                            <label for="pais"><b>País</b></label>
-                            <select id="pais" name="pais">
+                            <label for="form-pais"><b>País</b></label>
+                            <select id="form-pais" name="form-pais">
                                 <option value="argentina">Argentina</option>
                                 <option value="chile">Chile</option>
                                 <option value="uruguay">Uruguay</option>
@@ -103,8 +103,8 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="subject"><b>Consulta</b></label>
-                            <textarea id="consulta" name="consulta" required placeholder="Escribe tu consulta" cols="120" rows="10"></textarea>
+                            <label for="form-subject"><b>Consulta</b></label>
+                            <textarea id="form-subject" name="consulta" required placeholder="Escribe tu consulta" cols="120" rows="10"></textarea>
                         </div>
 
                         <input type="submit" value="Enviar">

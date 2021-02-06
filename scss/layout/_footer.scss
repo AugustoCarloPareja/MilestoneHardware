@@ -1,0 +1,50 @@
+// Footer con Metodología BEM
+
+.footer_redes {
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    background: $color-Dark; 
+    text-align: center; 
+    color: $color-White;
+
+    &--header {
+        padding: 10px;
+        }
+
+    &--content {
+        padding: 10px;
+
+        &--links {
+            padding: 15px;
+            width: 75px;
+            color: white;
+            cursor: pointer;
+            }
+            
+            a:hover {
+                text-decoration: none;
+                color: $color-ULight;
+                cursor: pointer;
+            }
+            
+            img:hover {
+                opacity: 50%;
+            }
+
+        & label {
+            font-size: 20px;
+            }
+        }
+
+    &--autor{
+        text-align: right;
+        font-size: 15px;
+        font-family: 'Teko', sans-serif;
+        text-shadow: 2px 2px 2px $color-Normal;
+    }
+}
+
+.textoRedes:hover {
+    cursor:pointer;
+}

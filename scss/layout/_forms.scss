@@ -1,20 +1,4 @@
-// Variables Globales - Colores
-
-$color-White: white;
-$color-ULight: #90b7bb;
-$color-Light: #71a2a8;
-$color-Normal:#57898e;
-$color-Dark: #446a6f;
-$color-UDark: #304c4f;
-$color-Black: black;
-$color-red: #861010;
-$color-green: #3d8d41;
-$color-grey: #727272;
-$color-reset: #ac5858;
-$fontSizeConstruccion: 15px;
-$heightConstruccion: 5vh;
-
-// Para darle forma al área de texto de consulta
+// Formulario de Consulta e Inputs
 input[type=text], select, textarea { 
     width: 100%;
     padding: 15px;
@@ -24,7 +8,6 @@ input[type=text], select, textarea {
     resize: vertical;
 }
 
-// Para darle forma al área del texto de correo
 input[type=email], select, textarea {
     width: 100%;
     padding: 15px;
@@ -34,7 +17,6 @@ input[type=email], select, textarea {
     resize: vertical
 }
   
-// Para darle color y forma al Enviar
 input[type=submit] {
     background-color: $color-grey;
     color: $color-White;
@@ -49,7 +31,6 @@ input[type=submit] {
     }
 }
   
-// Para darle color y forma al Limpiar consulta
 input[type=reset] {
     background-color: $color-reset;
     color: $color-White;
@@ -63,4 +44,8 @@ input[type=reset] {
         background-color: $color-red;
     }
 }
-// Fin formulario de contacto en contacto.html
+
+.form-control:focus { 
+    background-color: $color-White;
+    box-shadow: $color-ULight 0px 0px 0px 0.2rem;
+}

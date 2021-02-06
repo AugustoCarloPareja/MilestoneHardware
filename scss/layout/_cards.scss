@@ -1,0 +1,43 @@
+// Cards
+.card {
+    background-size: cover;
+
+    .card-img-top {
+        max-height: 180px;
+        width: auto;
+        overflow:hidden;
+        background-size: cover;
+        object-fit: fill;
+        
+
+        &:hover{
+            transition: all 1.9s ease;
+            transform:scale(1.25);
+        }
+    }
+
+    .card-footer{
+        object-fit: fill;
+    }
+}
+
+.img-stock {
+    max-height: 10px;
+}
+
+
+.card-footer {
+    background-color: $color-ULightCards;
+
+    .btn-primary{
+        background-color: $color-Normal;
+        border-color: $color-ULight;
+        margin-top: 5px;
+        
+        &:hover, &:focus, &:active {
+           background-color: $color-Dark; 
+           border-color: $color-ULight;
+           transition:(all .2s ease)
+        }
+    }
+}

@@ -1,0 +1,34 @@
+// Colores Background
+.colorBGWhite {
+    background-color: $color-White;
+}
+
+.colorBGUltraLight {
+    background-color: $color-ULight;
+}
+
+.colorBGLight {
+    background-color: $color-Light;
+}
+
+.colorBGNormal {
+    background-color: $color-Normal;
+}
+
+.colorBGDark {
+    background-color: $color-Dark;
+}
+
+.colorBGUltraDark {
+    background-color: $color-UDark;
+}
+
+.colorBGBlack {
+    background-color: $color-Black;
+}
+
+// Gradientes de colores
+
+.backgroundGradient {
+    background-image: linear-gradient(180deg, $color-Normal 40%, $color-ULight 80%);
+}

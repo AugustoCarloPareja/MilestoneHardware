@@ -1,274 +1,35 @@
-// Imports
+/*          ESTRUCTURA SASS
+|
+|– abstracts/
+|   |– _variables.scss    # Variables SASS
+|   |– _mixins.scss       # Mixins SASS
+|
+|– base/
+|   |– _base.scss         # Estilos Generales
+|   |– _colors.scss       # Colores Generales
+|
+|– layout/
+|   |– _footer.scss       # Footer
+|   |– _forms.scss        # Forms
+|   |– _navigation.scss   # Barras de Navegación
+|   |– _cards.scss        # Cards
+|
+|– pages/
+|   |– _index.scss        # index.html - Estilos específicos
+|   |– _contacto.scss     # contacto.html - Estilos específicos
+|   |– _quienesSomos.scss # quienesSomos.html - Estilos específicos
+|
+`– main.scss              # Main SASS file
+*/
 
-@import 'quienesSomos';
-@import 'contacto';
-
-// Variables Globales - Colores
-
-$color-White: white;
-$color-ULightCards: #cee7e7;
-$color-ULight: #90b7bb;
-$color-Light: #71a2a8;
-$color-Normal:#57898e;
-$color-Dark: #446a6f;
-$color-UDark: #304c4f;
-$color-Black: black;
-$color-red: #861010;
-$color-green: #3d8d41;
-$color-grey: #727272;
-$color-reset: #ac5858;
-$fontSizeConstruccion: 15px;
-$heightConstruccion: 5vh;
-
-
-// MIXINS SASS
-
-@mixin centradoFlex {
-    // Flex
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-
-@mixin pag-construccion {
-    background-image: linear-gradient(30deg, $color-Normal 40%, $color-ULight 80%);
-    letter-spacing: 5px;
-    font-weight: bold;
-    color: $color-grey;
-}
-
-// OPERACION SIMPLE EN SASS - Página en Construcción
-
-.construccion {
-    @include pag-construccion;
-    @include centradoFlex;
-    font-size: ($fontSizeConstruccion / 2) * 5;
-    height: $heightConstruccion * 15;
-}
-
-
-// Para todo el HTML - Responsive
-
-html{
-    position: relative;
-    min-height: 100%;
-}
-
-// Letra definida para todo el Body
-
-body {
-    font-family: 'DM Sans', sans-serif;
-}
-
-// Colores 
-
-.colorWhite {
-    color: $color-White;
-}
-
-.colorUltraLight {
-    color: $color-ULight;
-}
-
-.colorLight {
-    color: $color-Light;
-}
-
-.colorNormal {
-    color: $color-Normal;
-}
-
-.colorDark {
-    color: $color-Dark;
-}
-
-.colorUltraDark {
-    color: $color-UDark;
-}
-
-.colorBlack {
-    color: $color-Black;
-}
-// Colores Background
-.colorBGWhite {
-    background-color: $color-White;
-}
-
-.colorBGUltraLight {
-    background-color: $color-ULight;
-}
-
-.colorBGLight {
-    background-color: $color-Light;
-}
-
-.colorBGNormal {
-    background-color: $color-Normal;
-}
-
-.colorBGDark {
-    background-color: $color-Dark;
-}
-
-.colorBGUltraDark {
-    background-color: $color-UDark;
-}
-
-.colorBGBlack {
-    background-color: $color-Black;
-}
-
-// Gradientes de colores
-
-.backgroundGradient {
-    background-image: linear-gradient(180deg, $color-Normal 40%, $color-ULight 80%);
-}
-
-
-// Barra de Navegación
-
-.navbar-brand {
-    font-size: 35px;
-}
-
-.colorNavBar {
-    padding: 15px;
-    color: #ffffff;
-    background-color: $color-Dark;
-    border-radius: 5px; 
-    text-align: center;
-    &:hover {
-        background-color: $color-UDark;
-        color: $color-White;
-        text-decoration: none;
-    }
-}
-
-// Barra de búsqueda
-
-.botonBusqueda {
-    height: 30px;
-    width: 100px;
-}
-
-.btn-outline-success {
-    color: $color-White;
-    border-color: $color-UDark;
-}
-
-.colorSearchBar {
-    padding: 10px;
-    color: #ffffff;
-    background-color: $color-Dark;
-    border-radius: 5px; 
-    text-align: center;
-    &:hover {
-        background-color: $color-UDark;
-        color: $color-White;
-        text-decoration: none;
-    }
-}
-
-
-.form-control:focus { 
-    background-color: $color-White;
-    box-shadow: $color-ULight 0px 0px 0px 0.2rem;
-}
-                                
-// Inicio Lista de productos
-.productos {
-    @include centradoFlex;
-    font-size: 15px;
-    text-align: center;
-    padding: 25px;
-    // GRID
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.card-footer {
-    background-color: $color-ULightCards;
-
-    .btn-primary{
-        background-color: $color-Normal;
-        border-color: $color-ULight;
-        margin-top: 5px;
-        
-        &:hover, &:focus, &:active {
-           background-color: $color-Dark; 
-           border-color: $color-ULight;
-           transition:(all .2s ease)
-        }
-    }
-}
-
-
-//  Para sacar las viñetas y/o numeraciones
-ul ol li {
-    list-style: none;
-}
-
-// Para agrandar el botón de buscar en index
-.btn {
-    margin: 15px;
-}
-
-// Para alinear el texto de todas las row
-.row {
-    text-align: center;
-}
-
-
-// footer con Metodología BEM
-
-.footer_redes {
-    padding: 10px;
-    display: flex;
-    flex-flow: column wrap;
-    background: $color-Dark; 
-    text-align: center; 
-    color: $color-White;
-
-    &--header {
-        padding: 10px;
-        }
-
-    &--content {
-        padding: 10px;
-
-        &--links {
-            padding: 15px;
-            width: 75px;
-            color: white;
-            cursor: pointer;
-            }
-            
-            a:hover {
-                text-decoration: none;
-                color: $color-ULight;
-                cursor: pointer;
-            }
-            
-            img:hover {
-                opacity: 50%;
-            }
-
-        & label {
-            font-size: 20px;
-            }
-        }
-
-    &--autor{
-        text-align: right;
-        font-size: 15px;
-        font-family: 'Teko', sans-serif;
-        text-shadow: 2px 2px 2px $color-Normal;
-    }
-}
-
-// Agregarle cursor al texto de redes
-.textoRedes:hover {
-    cursor:pointer;
-}
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/base';
+@import 'base/colors';
+@import 'layout/forms';
+@import 'layout/navigation';
+@import 'layout/footer';
+@import 'layout/cards';
+@import 'pages/index';
+@import 'pages/contacto.scss';
+@import 'pages/quienesSomos';
