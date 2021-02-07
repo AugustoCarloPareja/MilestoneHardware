@@ -34,6 +34,19 @@
     }
 }
 
+.btn-outline-secondary{
+    background-color: $color-ULight;
+    color: $color-White;
+    border-color: $color-Dark;
+    border-radius: 5px; 
+    &:hover{
+        background-color: $color-MHRed;
+        border-color: $color-MHRed;
+        box-shadow: 0 5px 10px 0px $color-UDark;
+        transition:(all .2s ease);
+    }
+}
+
 .colorSearchBar {
     padding: 10px;
     color: #ffffff;

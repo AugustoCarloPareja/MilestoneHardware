@@ -51,13 +51,14 @@
         font-size: 15px;
         
         &:hover, &:focus {
-           background-color: $color-Dark; 
+           background-color: $color-green; 
            border-color: $color-ULight;
-           transition:(all .2s ease)
+           box-shadow: 0 5px 10px 0px $color-UDark;
+           transition:(all .2s ease);
         }
 
         &:active{
-            background-color: $color-UDark; 
+            background-color: $color-Dark;
             border-color: $color-Light;
         }
     }
