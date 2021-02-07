@@ -6,7 +6,6 @@
 .colorNavBar {
     padding: 15px;
     color: #ffffff;
-    background-color: $color-Dark;
     border-radius: 5px; 
     text-align: center;
     &:hover {
@@ -23,6 +22,10 @@
     width: 100px;
 }
 
+.colorBGSearchBar{
+    background-color: rgba(80, 74, 74, 0.4);
+}
+
 .btn-outline-success {
     color: $color-White;
     border-color: $color-UDark;
@@ -34,11 +37,13 @@
 .colorSearchBar {
     padding: 10px;
     color: #ffffff;
-    background-color: $color-Dark;
+    background-color: $color-Normal;
+    border-color: $color-Dark;
     border-radius: 5px; 
     text-align: center;
     &:hover {
         background-color: $color-UDark;
+        border-color: $color-UDark;
         color: $color-White;
         text-decoration: none;
     }

@@ -39,29 +39,33 @@ ul ol li {
 .row {
   text-align: center; }
 
+.backgroud-img {
+  background-image: url(/img/pruebaFondo.png);
+  background-attachment: fixed; }
+
 .colorBGWhite {
   background-color: white; }
 
 .colorBGUltraLight {
-  background-color: #90b7bb; }
+  background-color: #737373; }
 
 .colorBGLight {
-  background-color: #71a2a8; }
+  background-color: #595959; }
 
 .colorBGNormal {
-  background-color: #57898e; }
+  background-color: #404040; }
 
 .colorBGDark {
-  background-color: #446a6f; }
+  background-color: #262626; }
 
 .colorBGUltraDark {
-  background-color: #304c4f; }
+  background-color: #0d0d0d; }
 
 .colorBGBlack {
   background-color: black; }
 
 .backgroundGradient {
-  background-image: linear-gradient(180deg, #57898e 40%, #90b7bb 80%); }
+  background-image: linear-gradient(180deg, #404040 40%, #737373 80%); }
 
 input[type=text], select, textarea {
   width: 100%;
@@ -103,7 +107,7 @@ input[type=reset] {
 
 .form-control:focus {
   background-color: white;
-  box-shadow: #90b7bb 0px 0px 0px 0.2rem; }
+  box-shadow: #737373 0px 0px 0px 0.2rem; }
 
 .navbar-brand {
   font-size: 35px; }
@@ -111,11 +115,10 @@ input[type=reset] {
 .colorNavBar {
   padding: 15px;
   color: #ffffff;
-  background-color: #446a6f;
   border-radius: 5px;
   text-align: center; }
   .colorNavBar:hover {
-    background-color: #304c4f;
+    background-color: #0d0d0d;
     color: white;
     text-decoration: none; }
 
@@ -123,20 +126,25 @@ input[type=reset] {
   height: 30px;
   width: 100px; }
 
+.colorBGSearchBar {
+  background-color: rgba(80, 74, 74, 0.4); }
+
 .btn-outline-success {
   color: white;
-  border-color: #304c4f; }
+  border-color: #0d0d0d; }
   .btn-outline-success:hover {
     background-color: #3d8d41; }
 
 .colorSearchBar {
   padding: 10px;
   color: #ffffff;
-  background-color: #446a6f;
+  background-color: #404040;
+  border-color: #262626;
   border-radius: 5px;
   text-align: center; }
   .colorSearchBar:hover {
-    background-color: #304c4f;
+    background-color: #0d0d0d;
+    border-color: #0d0d0d;
     color: white;
     text-decoration: none; }
 
@@ -144,7 +152,7 @@ input[type=reset] {
   padding: 10px;
   display: flex;
   flex-flow: column wrap;
-  background: #446a6f;
+  background: #262626;
   text-align: center;
   color: white; }
   .footer_redes--header {
@@ -158,7 +166,7 @@ input[type=reset] {
       cursor: pointer; }
     .footer_redes--content a:hover {
       text-decoration: none;
-      color: #90b7bb;
+      color: #737373;
       cursor: pointer; }
     .footer_redes--content img:hover {
       opacity: 50%; }
@@ -168,15 +176,16 @@ input[type=reset] {
     text-align: right;
     font-size: 15px;
     font-family: 'Teko', sans-serif;
-    text-shadow: 2px 2px 2px #57898e; }
+    text-shadow: 2px 2px 2px #404040; }
 
 .textoRedes:hover {
   cursor: pointer; }
 
 .card {
   background-size: cover;
+  background-color: rgba(255, 255, 255, 0.85);
   width: 25rem;
-  box-shadow: 5px 5px 3px #304c4f; }
+  box-shadow: 0 5px 10px 0px rgba(161, 41, 41, 0.719), 0 8px 22px 0 rgba(161, 41, 41, 0.719); }
   .card img {
     width: 100%;
     max-height: 250px;
@@ -185,10 +194,10 @@ input[type=reset] {
   .card .tituloHardware {
     font-size: 20px;
     font-family: 'Merriweather Sans', sans-serif bold;
-    color: #304c4f;
+    color: #0d0d0d;
     margin-top: 10px;
-    border-bottom: 3px solid #57898e;
-    border-top: 3px solid #57898e; }
+    border-bottom: 3px solid #404040;
+    border-top: 3px solid #404040; }
   .card .card-title {
     display: flex;
     flex-flow: wrap;
@@ -204,21 +213,21 @@ input[type=reset] {
   font-size: 17px; }
 
 .card-footer {
-  background-color: #cee7e7; }
+  background-color: #a6a6a6; }
   .card-footer .btn-primary {
-    background-color: #57898e;
-    border-color: #90b7bb;
+    background-color: #404040;
+    border-color: #737373;
     margin-top: 5px;
     max-width: 150px;
     max-height: auto;
     font-size: 15px; }
     .card-footer .btn-primary:hover, .card-footer .btn-primary:focus {
-      background-color: #446a6f;
-      border-color: #90b7bb;
+      background-color: #262626;
+      border-color: #737373;
       transition: all 0.2s ease; }
     .card-footer .btn-primary:active {
-      background-color: #304c4f;
-      border-color: #71a2a8; }
+      background-color: #0d0d0d;
+      border-color: #595959; }
   .card-footer .shoppingItem {
     display: flex;
     flex-flow: wrap;
@@ -228,9 +237,9 @@ input[type=reset] {
       max-inline-size: 35px; }
 
 .btn-primary:focus {
-  background-color: #446a6f;
-  border-color: #90b7bb;
-  box-shadow: #90b7bb; }
+  background-color: #262626;
+  border-color: #737373;
+  box-shadow: #737373; }
 
 .zoom {
   width: 350px;
