@@ -64,9 +64,6 @@ ul ol li {
 .colorBGBlack {
   background-color: black; }
 
-.backgroundGradient {
-  background-image: linear-gradient(180deg, #404040 40%, #737373 80%); }
-
 input[type=text], select, textarea {
   width: 100%;
   padding: 15px;
@@ -105,9 +102,43 @@ input[type=reset] {
   input[type=reset]:hover {
     background-color: #861010; }
 
+.formContactLabel {
+  color: white; }
+
 .form-control:focus {
   background-color: white;
   box-shadow: #737373 0px 0px 0px 0.2rem; }
+
+.form-group {
+  color: white; }
+
+.btn-send {
+  height: 70px;
+  width: 150px;
+  background-color: #737373;
+  color: white;
+  border-color: #262626;
+  border-radius: 5px; }
+  .btn-send:hover, .btn-send:active, .btn-send:focus {
+    color: white;
+    background-color: #3d8d41;
+    border-color: #0d0d0d;
+    box-shadow: 0 5px 10px 0px #0d0d0d;
+    transition: all 0.2s ease; }
+
+.btn-clean {
+  height: 70px;
+  width: 150px;
+  background-color: #404040;
+  color: white;
+  border-color: #262626;
+  border-radius: 5px; }
+  .btn-clean:hover, .btn-clean:active, .btn-clean:focus {
+    color: white;
+    background-color: #560600;
+    border-color: #0d0d0d;
+    box-shadow: 0 3px 7px 0px #0d0d0d;
+    transition: all 0.2s ease; }
 
 .navbar-brand {
   font-size: 35px; }
@@ -146,14 +177,14 @@ input[type=reset] {
     box-shadow: 0 5px 10px 0px #0d0d0d;
     transition: all 0.2s ease; }
 
-.colorSearchBar {
+.searchBar {
   padding: 10px;
   color: #ffffff;
   background-color: #404040;
   border-color: #262626;
   border-radius: 5px;
   text-align: center; }
-  .colorSearchBar:hover {
+  .searchBar:hover {
     background-color: #0d0d0d;
     border-color: #0d0d0d;
     color: white;
@@ -200,8 +231,8 @@ input[type=reset] {
   .card .tituloHardware {
     font-size: 20px;
     font-family: 'Merriweather Sans', sans-serif bold;
+    padding: 50px;
     color: #0d0d0d;
-    margin-top: 10px;
     border-bottom: 3px solid #404040;
     border-top: 3px solid #404040; }
   .card .card-title {
@@ -266,3 +297,74 @@ input[type=reset] {
   padding: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr; }
+
+.pulgarAnimado {
+  -webkit-animation: action 1s infinite  alternate;
+  animation: action 1s infinite  alternate; }
+
+@-webkit-keyframes action {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-25px); } }
+
+@keyframes action {
+  0% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(-25px); } }
+
+.pulgarSize {
+  /* Extra small devices (phones, 600px and down) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */ }
+  @media only screen and (max-width: 600px) {
+    .pulgarSize {
+      height: 80px; } }
+  @media only screen and (min-width: 600px) {
+    .pulgarSize {
+      height: 100px; } }
+  @media only screen and (min-width: 768px) {
+    .pulgarSize {
+      height: 120px; } }
+  @media only screen and (min-width: 992px) {
+    .pulgarSize {
+      height: 140px; } }
+  @media only screen and (min-width: 1200px) {
+    .pulgarSize {
+      height: auto; } }
+
+.textConsulta {
+  /* Extra small devices (phones, 600px and down) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */ }
+  @media only screen and (max-width: 600px) {
+    .textConsulta {
+      font-size: 17px;
+      color: white;
+      box-shadow: 1px solid #0d0d0d; } }
+  @media only screen and (min-width: 600px) {
+    .textConsulta {
+      font-size: 19px;
+      color: white;
+      box-shadow: 1px solid #0d0d0d; } }
+  @media only screen and (min-width: 768px) {
+    .textConsulta {
+      font-size: 22px;
+      color: white;
+      box-shadow: 1px solid #0d0d0d; } }
+  @media only screen and (min-width: 992px) {
+    .textConsulta {
+      font-size: 25px;
+      color: white;
+      box-shadow: 1px solid #0d0d0d; } }
+  @media only screen and (min-width: 1200px) {
+    .textConsulta {
+      padding-top: 20px;
+      font-size: 30px;
+      color: white;
+      box-shadow: 1px solid #0d0d0d; } }

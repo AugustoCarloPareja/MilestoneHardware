@@ -1,4 +1,4 @@
-// Cards
+// Cards - Card Btn
 .card {
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.85);
@@ -16,8 +16,8 @@
     .tituloHardware{
         font-size: 20px;
         font-family: 'Merriweather Sans', sans-serif bold;
+        padding: 50px;
         color: $color-UDark;
-        margin-top: 10px;
         border-bottom: 3px solid $color-Normal;
         border-top: 3px solid $color-Normal;
     }

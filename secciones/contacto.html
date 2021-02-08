@@ -22,8 +22,8 @@
         <link rel="stylesheet" type="text/css" href="../css/estilos.css">
     </head>
     <body>  
-        <!-- Header con barra de navegación colapsable en Bootstrap-->
-        <header id="main-header" class="colorBGDark sticky-top">
+        <!-- BOOSTRAP Header con barra de navegación colapsable en Bootstrap-->
+        <header id="main-header" class="sticky-top colorBGNormal">
             <div class="container-fluid">
                 <!-- BOOTSTRAP Container-fluid que abarque todo, y otro container para centralizar-->
                 <div class="container">
@@ -50,21 +50,25 @@
             </div>
         </header>
        
-        <main class="container-fluid backgroundGradient">
+        <main class="container-fluid backgroud-img">
             <!-- BOOTSTRAP - Formulario con Carousel-->
-                    <form class="container pb-5">
+                    <form class="container pb-5 colorBGSearchBar">
                         <!-- BOOTSTRAP - Carousel slide con control -->
-                        <div id="estamosParaAyudarte" class="carousel slide p-5" data-ride="carousel">
+                        <div id="estamosParaAyudarte" class="carousel slide p-5 text-center carouselHeight" data-ride="carousel">
                             <ol class="carousel-indicators">
                               <li data-target="#estamosParaAyudarte" data-slide-to="0" class="active"></li>
                               <li data-target="#estamosParaAyudarte" data-slide-to="1"></li>
+                              <li data-target="#estamosParaAyudarte" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
                               <div class="carousel-item active">
-                                <img class="img-fluid" src="../img/contacto/EstamosParaAyudarte.png" alt="Estamos para ayudarte">
+                                <img class="img-fluid" src="../img/contacto/mejoramosLaExp.png" alt="Mejoramos la Experiencia">
                               </div>
                               <div class="carousel-item">
                                 <img class="img-fluid" src="../img/contacto/telContacto.png" alt="Teléfono de contacto">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="img-fluid" src="../img/contacto/boyGamer.png" alt="Boy Gamer">
                               </div>
                             </div>
                             <a class="carousel-control-prev" href="#estamosParaAyudarte" role="button" data-slide="prev">
@@ -77,24 +81,29 @@
                             </a>
                         </div>
 
+                        <div class="text-center">
+                            <p class="textConsulta">¡Envianos tu consulta!</p>
+                            <img class="img-fluid pulgarAnimado pt-3 pulgarSize" src="../img/formContacto/dedoHaciaAbajo.png">
+                        </div>
+
                         <div class="form-group">
-                            <label for="form-nombre"><b>Nombre</b></label>
+                            <label for="form-nombre"><strong class="text-white">Nombre</strong></label>
                             <input id="form-nombre" class="form-control" type="text" name="form-nombre" required placeholder="Tu nombre" data-error="Por favor, escribe tu nombre">
                         </div>
 
                         <div class="form-group">
-                            <label for="form_apellido"><b>Apellido</b></label>
+                            <label for="form_apellido"><strong class="text-white">Apellido</strong></label>
                             <input id="form-apellido" class="form-control" type="text" name="form-apellido" required placeholder="Tu apellido" data-error="Por favor, escribe tu apellido">
                         </div>
 
                         <div class="form-group">
-                            <label for="form-email"><b>Correo electrónico</b></label>
+                            <label for="form-email"><strong class="text-white">Correo electrónico</strong></label>
                             <input id="form-email" class="form-control" type="email" name="form-email" required placeholder="Tu correo" data-error="Por favor, escribe tu correo electrónico">
                         </div>
 
 
                         <div class="form-group">
-                            <label for="form-pais"><b>País</b></label>
+                            <label class="formContactLabel" for="form-pais"><strong class="text-white">País</strong></label>
                             <select id="form-pais" name="form-pais">
                                 <option value="argentina">Argentina</option>
                                 <option value="chile">Chile</option>
@@ -103,12 +112,14 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="form-subject"><b>Consulta</b></label>
-                            <textarea id="form-subject" name="consulta" required placeholder="Escribe tu consulta" cols="120" rows="10"></textarea>
+                            <label class="formContactLabel" for="form-subject"><strong class="text-white">Consulta</strong></label>
+                            <textarea id="form-subject" name="consulta" required placeholder="Escribe tu consulta" cols="5" rows="6"></textarea>
                         </div>
 
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpiar consulta"/>
+                        <div>
+                            <button class="btn btn-send" type="submit" value="Enviar"> Enviar </button>
+                            <button class="btn btn-clean" type="reset" value="Limpiar consulta"> Limpiar consulta </button>
+                        </div>                        
                     </form>
                 </div>
             </div>
@@ -118,29 +129,25 @@
         <footer>
             <div class="footer_redes">
                 <div class="footer_redes--header">
-                    <h2>¡Conectate en nuestras redes!</h2>   
+                    <h1>¡Conectate en nuestras redes!</h1>   
                 </div>
                 <!-- Footer con Redes Sociales-->
                 <div class="footer_redes--content">
                     <!-- Facebook -->
-                    <a href="#" class="footer_redes--content--links" tittle="Facebook">
-                        <img src="../img/redesSociales/facebook.png" button type="button" href="#"  alt="Logo de Facebook">
-                        <label class="textoRedes">Facebook</label>
+                    <a href="https://www.facebook.com" class="footer_redes--content--links" tittle="Facebook">
+                        <img src="../img/redesSociales/facebook.png" button type="button" alt="Logo de Facebook">
                     </a>
                     <!-- Instagram-->
-                    <a href="#" class="footer_redes--content--links" tittle="Instagram">
-                        <img src="../img/redesSociales/instagram.png" button type="button" href="#"  alt="Logo de Instagram">
-                        <label class="textoRedes">Instagram</label>
+                    <a href="https://www.instagram.com" class="footer_redes--content--links" tittle="Instagram">
+                        <img src="../img/redesSociales/instagram.png" button type="button" alt="Logo de Instagram">
                     </a>
                     <!-- Twitter-->
-                    <a href="#" class="footer_redes--content--links" tittle="Twitter">
-                        <img src="../img/redesSociales/twitter.png" button type="button" href="#"  alt="Logo de Twitter">
-                        <label class="textoRedes">Twitter</label>
+                    <a href="https://www.twitter.com" class="footer_redes--content--links" tittle="Twitter">
+                        <img src="../img/redesSociales/twitter.png" button type="button" alt="Logo de Twitter">
                     </a>
                     <!-- YouTube -->
-                    <a href="#" class="footer_redes--content--links" tittle="YouTube">
-                        <img src="../img/redesSociales/youtube.png" button type="button" href="#"  alt="Logo de YouTube">
-                        <label class="textoRedes">Youtube</label>
+                    <a href="https://www.youtube.com" class="footer_redes--content--links" tittle="YouTube">
+                        <img src="../img/redesSociales/youtube.png" button type="button" alt="Logo de YouTube">
                     </a>
                 </div>
 

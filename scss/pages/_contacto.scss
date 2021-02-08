@@ -1,0 +1,72 @@
+// Animación en Imágen de Pulgar hacia Abajo
+.pulgarAnimado {
+    -webkit-animation: action 1s infinite  alternate;
+    animation: action 1s infinite  alternate;
+}
+@-webkit-keyframes action {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-25px); }
+}
+@keyframes action {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-25px); }
+}
+
+.pulgarSize{
+    /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        height: 80px;
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        height: 100px;
+    }
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        height:120px;    
+    }
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        height: 140px;
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        height: auto;
+    }
+}
+
+.textConsulta {
+        /* Extra small devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+        font-size: 17px;
+        color: white;
+        box-shadow: 1px solid $color-UDark;
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        font-size: 19px;
+        color: white;
+        box-shadow: 1px solid $color-UDark;
+    }
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        font-size: 22px;
+        color: white;
+        box-shadow: 1px solid $color-UDark;
+    }
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        font-size: 25px;
+        color: white;
+        box-shadow: 1px solid $color-UDark;
+    }
+
+    /* Extra large devices (large laptops and desktops, 1200px and up) */
+    @media only screen and (min-width: 1200px) {
+        padding-top: 20px;
+        font-size: 30px;
+        color: white;
+        box-shadow: 1px solid $color-UDark;
+    }
+}

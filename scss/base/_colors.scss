@@ -26,9 +26,3 @@
 .colorBGBlack {
     background-color: $color-Black;
 }
-
-// Gradientes de colores
-
-.backgroundGradient {
-    background-image: linear-gradient(180deg, $color-Normal 40%, $color-ULight 80%);
-}

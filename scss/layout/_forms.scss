@@ -1,4 +1,4 @@
-// Formulario de Consulta e Inputs
+// Formulario de Consulta - Inputs - Form Btn
 input[type=text], select, textarea { 
     width: 100%;
     padding: 15px;
@@ -45,7 +45,47 @@ input[type=reset] {
     }
 }
 
+.formContactLabel{
+    color: $color-White;
+}
+
 .form-control:focus { 
     background-color: $color-White;
     box-shadow: $color-ULight 0px 0px 0px 0.2rem;
+}
+
+.form-group {
+    color: $color-White;
+}
+
+.btn-send {
+    height: 70px;
+    width: 150px;
+    background-color: $color-ULight;
+    color: $color-White;
+    border-color: $color-Dark;
+    border-radius: 5px; 
+    &:hover, &:active, &:focus{
+        color: $color-White;
+        background-color: $color-green;
+        border-color: $color-UDark;
+        box-shadow: 0 5px 10px 0px $color-UDark;
+         transition:(all .2s ease);
+    }
+}
+
+.btn-clean {
+    height: 70px;
+    width: 150px;
+    background-color: $color-Normal;
+    color: $color-White;
+    border-color: $color-Dark;
+    border-radius: 5px; 
+    &:hover, &:active, &:focus{
+        color: $color-White;
+        background-color: $color-MHRed;
+        border-color: $color-UDark;
+        box-shadow: 0 3px 7px 0px $color-UDark;
+         transition:(all .2s ease);
+    }
 }
