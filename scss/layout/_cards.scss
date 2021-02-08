@@ -46,28 +46,24 @@
         background-color: $color-Normal;
         border-color: $color-ULight;
         margin-top: 5px;
-        max-width: 150px;
-        max-height: auto;
+        max-width: 180px;
+        max-height: 49px;
         font-size: 15px;
         
-        &:hover, &:focus {
-           background-color: $color-green; 
-           border-color: $color-ULight;
+        &:hover, &:focus, &:active{
+           background-color: $color-green !important; 
+           border-color: $color-ULight !important;
            box-shadow: 0 5px 10px 0px $color-UDark;
            transition:(all .2s ease);
         }
-
-        &:active{
-            background-color: $color-Dark;
-            border-color: $color-Light;
-        }
     }
-    .shoppingItem{
-        @include centradoFlex;
+}
+        
+.shoppingItem{
+    @include centradoFlex;
 
-        img{
-            max-inline-size: 35px;
-        }
+    img{
+        max-inline-size: 35px;
     }
 }
 

@@ -255,24 +255,22 @@ input[type=reset] {
     background-color: #404040;
     border-color: #737373;
     margin-top: 5px;
-    max-width: 150px;
-    max-height: auto;
+    max-width: 180px;
+    max-height: 49px;
     font-size: 15px; }
-    .card-footer .btn-primary:hover, .card-footer .btn-primary:focus {
-      background-color: #3d8d41;
-      border-color: #737373;
+    .card-footer .btn-primary:hover, .card-footer .btn-primary:focus, .card-footer .btn-primary:active {
+      background-color: #3d8d41 !important;
+      border-color: #737373 !important;
       box-shadow: 0 5px 10px 0px #0d0d0d;
       transition: all 0.2s ease; }
-    .card-footer .btn-primary:active {
-      background-color: #262626;
-      border-color: #595959; }
-  .card-footer .shoppingItem {
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    align-content: center; }
-    .card-footer .shoppingItem img {
-      max-inline-size: 35px; }
+
+.shoppingItem {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-content: center; }
+  .shoppingItem img {
+    max-inline-size: 35px; }
 
 .btn-primary:focus {
   background-color: #262626;
