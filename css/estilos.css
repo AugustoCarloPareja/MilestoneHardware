@@ -198,20 +198,36 @@ input[type=reset] {
   text-align: center;
   color: white; }
   .footer_redes--header {
-    padding: 10px; }
+    display: flex;
+    flex-flow: wrap column;
+    padding: 10px 10px 0px 10px; }
+    .footer_redes--header h1 {
+      color: white;
+      font-size: 15px;
+      text-shadow: 1px 1px 2px black, 0 0 1em #560600, 0 0 0.2em #560600; }
+    .footer_redes--header p {
+      color: white;
+      font-size: 12px; }
   .footer_redes--content {
-    padding: 10px; }
+    padding: 0px 10px; }
+    .footer_redes--content a {
+      text-decoration: none; }
     .footer_redes--content--links {
-      padding: 15px;
-      width: 75px;
+      margin: 15px;
+      width: 5px;
       color: white;
       cursor: pointer; }
-    .footer_redes--content img:hover {
-      background-color: #262626;
-      border-radius: 5px; }
+    .footer_redes--content img {
+      height: 35px;
+      width: 35px; }
+      .footer_redes--content img:hover {
+        opacity: 60%; }
+      .footer_redes--content img:active {
+        opacity: 100%; }
   .footer_redes--autor {
+    padding-top: 15px;
     text-align: right;
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Teko', sans-serif;
     text-shadow: 2px 2px 2px #404040; }
 
@@ -366,3 +382,119 @@ input[type=reset] {
       font-size: 30px;
       color: white;
       box-shadow: 1px solid #0d0d0d; } }
+
+.cover-img {
+  /* Extra small devices (phones, 600px and down) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */ }
+  @media (max-width: 767px) {
+    .cover-img {
+      background-image: url(../img/quienesSomos/quienesSomosFondo.png);
+      background-size: cover;
+      min-height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  @media only screen and (min-width: 600px) {
+    .cover-img {
+      background-image: url(../img/quienesSomos/quienesSomosFondo.png);
+      background-size: cover;
+      min-height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  @media only screen and (min-width: 768px) {
+    .cover-img {
+      background-image: url(../img/quienesSomos/quienesSomosFondo.png);
+      background-size: cover;
+      min-height: 170px;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  @media only screen and (min-width: 992px) {
+    .cover-img {
+      background-image: url(../img/quienesSomos/quienesSomosFondo.png);
+      background-size: cover;
+      min-height: 230px;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+  @media only screen and (min-width: 1200px) {
+    .cover-img {
+      background-image: url(../img/quienesSomos/quienesSomosFondo.png);
+      min-height: 250px;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center; } }
+
+.banner-mh {
+  /* Extra small devices (phones, 600px and down) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */ }
+  @media only screen and (max-width: 600px) {
+    .banner-mh {
+      font-family: 'Rubik Mono One', sans-serif;
+      color: white;
+      font-size: 35px;
+      text-shadow: 2px 2px 2px #560600; } }
+  @media only screen and (min-width: 600px) {
+    .banner-mh {
+      font-family: 'Rubik Mono One', sans-serif;
+      color: white;
+      font-size: 40px;
+      text-shadow: 2px 2px 2px #560600; } }
+  @media only screen and (min-width: 768px) {
+    .banner-mh {
+      font-family: 'Rubik Mono One', sans-serif;
+      color: white;
+      font-size: 45px;
+      text-shadow: 2px 2px 2px #560600; } }
+  @media only screen and (min-width: 992px) {
+    .banner-mh {
+      font-family: 'Rubik Mono One', sans-serif;
+      color: white;
+      font-size: 50px;
+      text-shadow: 2px 2px 2px #560600; } }
+  @media only screen and (min-width: 1200px) {
+    .banner-mh {
+      font-family: 'Rubik Mono One', sans-serif;
+      color: white;
+      font-size: 60px;
+      text-shadow: 0px 5px 2px #560600; } }
+
+.quienes-somos-title {
+  font-family: 'Bowlby One SC', sans-serif;
+  color: white;
+  font-size: 40px; }
+
+.quienes-somos-text {
+  font-family: 'Bowlby One SC', sans-serif;
+  color: white;
+  font-size: 16px; }
+
+.contact {
+  margin-bottom: 62px;
+  padding-left: 32px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-left: 5px solid #ff5e00; }
+
+.valoresMH {
+  margin-bottom: 62px;
+  padding-left: 32px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border-left: 5px solid #2ec21a; }
+
+.quienes-somos-titles {
+  font-size: 25px;
+  color: white; }
+
+.quienes-somos-description {
+  font-size: 16px;
+  color: white; }
