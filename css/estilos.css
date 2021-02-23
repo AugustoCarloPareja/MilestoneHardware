@@ -350,11 +350,11 @@ input[type=reset] {
     transform: translateY(-25px); } }
 
 .pulgarSize {
+  height: auto;
   /* Extra small devices (phones, 600px and down) */
   /* Small devices (portrait tablets and large phones, 600px and up) */
   /* Medium devices (landscape tablets, 768px and up) */
-  /* Large devices (laptops/desktops, 992px and up) */
-  /* Extra large devices (large laptops and desktops, 1200px and up) */ }
+  /* Large devices (laptops/desktops, 992px and up) */ }
   @media only screen and (max-width: 600px) {
     .pulgarSize {
       height: 80px; } }
@@ -367,9 +367,6 @@ input[type=reset] {
   @media only screen and (min-width: 992px) {
     .pulgarSize {
       height: 140px; } }
-  @media only screen and (min-width: 1200px) {
-    .pulgarSize {
-      height: auto; } }
 
 .textConsulta {
   color: white;
@@ -452,12 +449,31 @@ input[type=reset] {
 .quienes-somos-title {
   font-family: 'Bowlby One SC', sans-serif;
   color: white;
-  font-size: 40px; }
+  /* Extra small devices (phones, 600px and down) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */ }
+  @media only screen and (max-width: 600px) {
+    .quienes-somos-title {
+      font-size: 30px; } }
+  @media only screen and (min-width: 600px) {
+    .quienes-somos-title {
+      font-size: 32px; } }
+  @media only screen and (min-width: 768px) {
+    .quienes-somos-title {
+      font-size: 35px; } }
+  @media only screen and (min-width: 992px) {
+    .quienes-somos-title {
+      font-size: 38px; } }
+  @media only screen and (min-width: 1200px) {
+    .quienes-somos-title {
+      font-size: 40px; } }
 
 .quienes-somos-text {
   font-family: 'Bowlby One SC', sans-serif;
   color: white;
-  font-size: 18px; }
+  font-size: 17px; }
 
 .contact {
   margin-bottom: 62px;
@@ -478,7 +494,7 @@ input[type=reset] {
   color: white; }
 
 .quienes-somos-description {
-  font-size: 18px;
+  font-size: 17px;
   color: white; }
 
 .cover-img-ofertas {

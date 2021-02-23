@@ -1,14 +1,28 @@
 # MilestoneHardware
 
-## This is a website of a "fictional" company who sells Hardware in Córdoba, Argentina.
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+* [Support](#Support)
 
-## It's part of a course of Coderhouse about Web Development.
+## General info
+This project is about a fictional e-commerce. It is also part of a CoderHouse's Course (Web Development)
+	
+## Technologies
+This project was created with:
+* HTML5
+* CSS
+* SASS
+* Bootstrap
+* JS (Just a bit of scripts enhaced in HTML)
+	
+## Setup
+To run this project, you dont need to install anything, but if you want to use SASS you should use:
 
-## It may have some code errors but it will be updated periodically.
+```
+$ npm run build-css or npm run watch-css
+```
 
-## The index.html and contacto.html are the only HTML developed -the rest its in construction ;)-
-
-## I have included SASS in the middle of the project, that's why its not full or entire developed.
-
-
-## ¡Be my guest and have fun!
+## Support
+I'm new in WD but I'm really trying to learn quickly. ¡Thanks for your support!

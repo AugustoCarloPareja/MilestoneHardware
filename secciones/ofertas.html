@@ -39,10 +39,10 @@
                         </button>                    
                         <div class="collapse navbar-collapse" id="basicNavBar">
                             <div class="mr-auto ml-auto navbar-nav">
-                                <a href="quienesSomos.html" class="nav-item colorNavBar">Quiénes somos</a>
-                                <a href="contacto.html" class="nav-item colorNavBar">Contacto</a>
-                                <a href="ofertas.html" class="nav-item colorNavBar">¡Ofertas!</a>
-                                <a href="misCompras.html" class="nav-item colorNavBar">Mis compras</a>
+                                <a href="quienesSomos.html" class="nav-item colorNavBar mr-2 pl-4 pr-4">Quiénes somos</a>
+                                <a href="contacto.html" class="nav-item colorNavBar ml-2 mr-2 pl-4 pr-4">Contacto</a>
+                                <a href="ofertas.html" class="nav-item colorNavBar ml-2 mr-2 pl-4 pr-4">¡Ofertas!</a>
+                                <a href="misCompras.html" class="nav-item colorNavBar ml-2 mr-2 pl-4 pr-4">Mis compras</a>
                             </div>
                         </div>
                     </nav>
@@ -62,13 +62,14 @@
                 </div>
                 <!-- BOOTSTRAP - Listado para filtar -->
                 <div class="container-fluid colorBGSearchBar">
-                    <div id="placaMadre" class="container">
-                        <div class="row justify-content-between">
-                            <a class="btn btn-secondary searchBar" href="#placaMadre">Placas Madres</a>
-                            <a class="btn btn-secondary searchBar" href="#memorias">Memorias</a>
-                            <a class="btn btn-secondary searchBar" href="#videocards">Tarjetas de Video</a>
-                            <a class="btn btn-secondary searchBar" href="#hdd">Discos Duros</a>
-                            <a class="btn btn-secondary searchBar" href="#ssd">Discos de Estado Sólido</a>
+                    <div class="container">
+                        <!-- Barra de Navegación Secundaria con ID específicos de anclaje-->
+                        <div id="irAPlacaMadre" class="row justify-content-center justify-content-lg-between">
+                                <a class="btn btn-secondary searchBar" href="#irAPlacaMadre">Placas Madres</a>
+                                <a class="btn btn-secondary searchBar" href="#irAMemorias">Memorias</a>
+                                <a class="btn btn-secondary searchBar" href="#irAVideocards">Tarjetas de Video</a>
+                                <a class="btn btn-secondary searchBar" href="#irAHdd">Discos Duros</a>
+                                <a class="btn btn-secondary searchBar" href="#irASsd">Discos de Estado Sólido</a>
                         </div>
                     </div>
                 </div>
@@ -111,7 +112,7 @@
                                 <p class="card-text m-0 p-2"> ¡Realmente no vas a encontrar un mejor precio! <br> ¡No tengas dudas en elegir MSI! <br> <strong>#BestDeal</strong> <hr> <a href="https://es.msi.com/Motherboard/MAG-B460-TORPEDO">Más información aquí</a> </p>
                                 <div class="card-footer">
                                     <p class="titularPrecioOferta">Precio: <strong>ARS$ 30.240</strong> <strong class="precioAnterior">56.000</strong></p>
-                                    <div id="memorias" class="btn-group shoppingItem">
+                                    <div id="irAMemorias" class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
                                 </div>
@@ -155,7 +156,7 @@
                                 <p class="card-text m-0 p-2">¡Cuatriplicá tu RAM! <br> Una excelente elección <br> <strong>#BestDeal</strong> <hr> <a href="https://www.gskill.com/specification/165/168/1536047134/F4-3200C16Q2-128GTZKY-Specification">Más información aquí</a> </p>
                                 <div class="card-footer">
                                     <p class="titularPrecioOferta">Precio: <strong>ARS$ 90.450</strong> <strong class="precioAnterior">135.000</strong></p>
-                                    <div id="videocards" class="btn-group shoppingItem">
+                                    <div id="irAVideocards" class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
                                 </div>
@@ -199,7 +200,7 @@
                                 <p class="card-text m-0 p-2"> ¡No vas a encontrar un mejor precio! <br> ¡4GB GDDR5! <br> <strong>#BestDeal</strong> <hr> <a href="https://www.gigabyte.com/ar/Graphics-Card/GV-RX480G1-GAMING-4GD#kf">Más información aquí</a> </p>
                                 <div class="card-footer">
                                     <p class="titularPrecioOferta">Precio: <strong>ARS$ 30.000</strong> <strong class="precioAnterior">60.000</strong></p>
-                                    <div id="hdd" class="btn-group shoppingItem">
+                                    <div id="irAHdd" class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
                                 </div>
@@ -243,14 +244,14 @@
                                 <p class="card-text m-0 p-2"> ¡Precio al por mayor! <br> ¡Seis unidades increíbles! <br> <strong>#BestDeal</strong> <hr> <a href="https://shop.westerndigital.com/products/internal-drives/wd-blue-mobile-sata-hdd#WD3200LPCX">Más información aquí</a> </p>
                                 <div class="card-footer">
                                     <p class="titularPrecioOferta">Precio: <strong>ARS$ 12.870</strong> <strong class="precioAnterior">23.400</strong></p>
-                                    <div class="btn-group shoppingItem">
+                                    <div id="irASsd" class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="ssd" class="row">
+                    <div class="row">
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
                                 <span class="oferta30">8% OFF</span>
@@ -284,7 +285,7 @@
                                 <span class="oferta30">30% OFF</span>
                                 <img src="../img/discosSolidos/SSDWDGreen120GB.png" class="img-fluid p-3 zoom" alt="SSD Western Digital Green 120GB">
                                 <p class="card-title tituloHardware"><strong>SSD Western Digital Green 120GB</strong> 10 Unidades</p>
-                                <p class="card-text m-0 p-2"> Podría servir para tu emprendimiento <br> ¡Vamos! <br> <strong>#BestDeak</strong> <hr> <a href="https://shop.westerndigital.com/es-la/products/internal-drives/wd-green-sata-2-5-ssd#WDS120G2G0A">Más información aquí</a> </p>
+                                <p class="card-text m-0 p-2"> Podría servir para tu emprendimiento <br> ¡Vamos! <br> <strong>#BestDeal</strong> <hr> <a href="https://shop.westerndigital.com/es-la/products/internal-drives/wd-green-sata-2-5-ssd#WDS120G2G0A">Más información aquí</a> </p>
                                 <div class="card-footer">
                                     <p class="titularPrecioOferta">Precio: <strong>ARS$ 21.000</strong> <strong class="precioAnterior">30.000</strong></p>
                                     <div class="btn-group shoppingItem">
