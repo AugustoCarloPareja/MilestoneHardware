@@ -265,6 +265,18 @@ input[type=reset] {
   font-family: 'Raleway', sans-serif;
   font-size: 17px; }
 
+.titularPrecioOferta {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  color: #560600; }
+
+.precioAnterior {
+  font-size: 13px;
+  color: #0d0d0d;
+  text-decoration: line-through;
+  position: absolute;
+  padding-left: 5px; }
+
 .card-footer {
   background-color: #a6a6a6; }
   .card-footer .btn-primary {
@@ -292,6 +304,15 @@ input[type=reset] {
   background-color: #262626;
   border-color: #737373;
   box-shadow: #737373; }
+
+.oferta30 {
+  position: absolute;
+  margin: 20px;
+  padding: 3px;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  background-color: #560600; }
 
 .zoom {
   width: 350px;
@@ -351,6 +372,8 @@ input[type=reset] {
       height: auto; } }
 
 .textConsulta {
+  color: white;
+  box-shadow: 1px solid #0d0d0d;
   /* Extra small devices (phones, 600px and down) */
   /* Small devices (portrait tablets and large phones, 600px and up) */
   /* Medium devices (landscape tablets, 768px and up) */
@@ -358,32 +381,27 @@ input[type=reset] {
   /* Extra large devices (large laptops and desktops, 1200px and up) */ }
   @media only screen and (max-width: 600px) {
     .textConsulta {
-      font-size: 17px;
-      color: white;
-      box-shadow: 1px solid #0d0d0d; } }
+      font-size: 17px; } }
   @media only screen and (min-width: 600px) {
     .textConsulta {
-      font-size: 19px;
-      color: white;
-      box-shadow: 1px solid #0d0d0d; } }
+      font-size: 19px; } }
   @media only screen and (min-width: 768px) {
     .textConsulta {
-      font-size: 22px;
-      color: white;
-      box-shadow: 1px solid #0d0d0d; } }
+      font-size: 22px; } }
   @media only screen and (min-width: 992px) {
     .textConsulta {
-      font-size: 25px;
-      color: white;
-      box-shadow: 1px solid #0d0d0d; } }
+      font-size: 25px; } }
   @media only screen and (min-width: 1200px) {
     .textConsulta {
       padding-top: 20px;
-      font-size: 30px;
-      color: white;
-      box-shadow: 1px solid #0d0d0d; } }
+      font-size: 30px; } }
 
 .cover-img {
+  background-image: url(../img/quienesSomos/quienesSomosFondo.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* Extra small devices (phones, 600px and down) */
   /* Small devices (portrait tablets and large phones, 600px and up) */
   /* Medium devices (landscape tablets, 768px and up) */
@@ -391,46 +409,24 @@ input[type=reset] {
   /* Extra large devices (large laptops and desktops, 1200px and up) */ }
   @media (max-width: 767px) {
     .cover-img {
-      background-image: url(../img/quienesSomos/quienesSomosFondo.png);
-      background-size: cover;
-      min-height: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
+      min-height: 100px; } }
   @media only screen and (min-width: 600px) {
     .cover-img {
-      background-image: url(../img/quienesSomos/quienesSomosFondo.png);
-      background-size: cover;
-      min-height: 150px;
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
+      min-height: 150px; } }
   @media only screen and (min-width: 768px) {
     .cover-img {
-      background-image: url(../img/quienesSomos/quienesSomosFondo.png);
-      background-size: cover;
-      min-height: 170px;
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
+      min-height: 170px; } }
   @media only screen and (min-width: 992px) {
     .cover-img {
-      background-image: url(../img/quienesSomos/quienesSomosFondo.png);
-      background-size: cover;
-      min-height: 230px;
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
+      min-height: 230px; } }
   @media only screen and (min-width: 1200px) {
     .cover-img {
-      background-image: url(../img/quienesSomos/quienesSomosFondo.png);
-      min-height: 250px;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center; } }
+      min-height: 250px; } }
 
 .banner-mh {
+  font-family: 'Rubik Mono One', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 2px #560600;
   /* Extra small devices (phones, 600px and down) */
   /* Small devices (portrait tablets and large phones, 600px and up) */
   /* Medium devices (landscape tablets, 768px and up) */
@@ -438,32 +434,18 @@ input[type=reset] {
   /* Extra large devices (large laptops and desktops, 1200px and up) */ }
   @media only screen and (max-width: 600px) {
     .banner-mh {
-      font-family: 'Rubik Mono One', sans-serif;
-      color: white;
-      font-size: 35px;
-      text-shadow: 2px 2px 2px #560600; } }
+      font-size: 35px; } }
   @media only screen and (min-width: 600px) {
     .banner-mh {
-      font-family: 'Rubik Mono One', sans-serif;
-      color: white;
-      font-size: 40px;
-      text-shadow: 2px 2px 2px #560600; } }
+      font-size: 40px; } }
   @media only screen and (min-width: 768px) {
     .banner-mh {
-      font-family: 'Rubik Mono One', sans-serif;
-      color: white;
-      font-size: 45px;
-      text-shadow: 2px 2px 2px #560600; } }
+      font-size: 45px; } }
   @media only screen and (min-width: 992px) {
     .banner-mh {
-      font-family: 'Rubik Mono One', sans-serif;
-      color: white;
-      font-size: 50px;
-      text-shadow: 2px 2px 2px #560600; } }
+      font-size: 50px; } }
   @media only screen and (min-width: 1200px) {
     .banner-mh {
-      font-family: 'Rubik Mono One', sans-serif;
-      color: white;
       font-size: 60px;
       text-shadow: 0px 5px 2px #560600; } }
 
@@ -475,7 +457,7 @@ input[type=reset] {
 .quienes-somos-text {
   font-family: 'Bowlby One SC', sans-serif;
   color: white;
-  font-size: 16px; }
+  font-size: 18px; }
 
 .contact {
   margin-bottom: 62px;
@@ -496,5 +478,58 @@ input[type=reset] {
   color: white; }
 
 .quienes-somos-description {
-  font-size: 16px;
+  font-size: 18px;
   color: white; }
+
+.cover-img-ofertas {
+  background-image: url(../img/quienesSomos/quienesSomosFondo2.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Extra small devices (phones, 600px and down) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */ }
+  @media (max-width: 767px) {
+    .cover-img-ofertas {
+      min-height: 100px; } }
+  @media only screen and (min-width: 600px) {
+    .cover-img-ofertas {
+      min-height: 150px; } }
+  @media only screen and (min-width: 768px) {
+    .cover-img-ofertas {
+      min-height: 170px; } }
+  @media only screen and (min-width: 992px) {
+    .cover-img-ofertas {
+      min-height: 230px; } }
+  @media only screen and (min-width: 1200px) {
+    .cover-img-ofertas {
+      min-height: 250px; } }
+
+.banner-ofertas {
+  font-family: 'Rubik Mono One', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 2px #525211;
+  /* Extra small devices (phones, 600px and down) */
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */
+  /* Extra large devices (large laptops and desktops, 1200px and up) */ }
+  @media only screen and (max-width: 600px) {
+    .banner-ofertas {
+      font-size: 35px; } }
+  @media only screen and (min-width: 600px) {
+    .banner-ofertas {
+      font-size: 40px; } }
+  @media only screen and (min-width: 768px) {
+    .banner-ofertas {
+      font-size: 45px; } }
+  @media only screen and (min-width: 992px) {
+    .banner-ofertas {
+      font-size: 50px; } }
+  @media only screen and (min-width: 1200px) {
+    .banner-ofertas {
+      font-size: 60px;
+      text-shadow: 0px 5px 2px #525211; } }

@@ -38,6 +38,19 @@
     font-size: 17px;
 }
 
+.titularPrecioOferta {
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    color: $color-MHRed;
+}
+
+.precioAnterior {
+    font-size: 13px;
+    color: $color-UDark;
+    text-decoration: line-through;
+    position:absolute;
+    padding-left: 5px;
+}
 
 .card-footer {
     background-color: $color-ULightCards;
@@ -72,3 +85,16 @@
     border-color: $color-ULight;
     box-shadow: $color-ULight;
  }
+
+ // Ofertas
+
+.oferta30 {
+  position: absolute;
+  margin: 20px;
+  padding: 3px;
+  border-radius: 10px;
+  color: $color-White;
+  font-size: 25px;
+  background-color: $color-MHRed;
+}
+
