@@ -37,36 +37,30 @@
 }
 
 .textConsulta {
-        /* Extra small devices (phones, 600px and down) */
+    color: white;
+    box-shadow: 1px solid $color-UDark;
+    
+    /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
-        font-size: 17px;
-        color: white;
-        box-shadow: 1px solid $color-UDark;
+    font-size: 17px;
+        
     }
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
         font-size: 19px;
-        color: white;
-        box-shadow: 1px solid $color-UDark;
     }
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
         font-size: 22px;
-        color: white;
-        box-shadow: 1px solid $color-UDark;
     }
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
         font-size: 25px;
-        color: white;
-        box-shadow: 1px solid $color-UDark;
     }
 
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
         padding-top: 20px;
         font-size: 30px;
-        color: white;
-        box-shadow: 1px solid $color-UDark;
     }
 }

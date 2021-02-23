@@ -15,7 +15,8 @@
         <meta property="og:title" content="Milestone Hardware">
         <meta property="og:description" content="Ofertas de Hardware, Milestone Hardware">
         <meta property="og:url" content="https://milestonehardware.com.ar/ofertas.html">
-
+        <!-- FavIcon-->
+        <link rel="icon" href="../img/favicon.ico">
         <!-- Boostrap CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- Estilos propios-->
@@ -38,7 +39,6 @@
                         </button>                    
                         <div class="collapse navbar-collapse" id="basicNavBar">
                             <div class="mr-auto ml-auto navbar-nav">
-                                <a href="../index.html" class="nav-item colorNavBar">Inicio</a>
                                 <a href="quienesSomos.html" class="nav-item colorNavBar">Quiénes somos</a>
                                 <a href="contacto.html" class="nav-item colorNavBar">Contacto</a>
                                 <a href="ofertas.html" class="nav-item colorNavBar">¡Ofertas!</a>
@@ -51,27 +51,38 @@
         </header>
         <!-- Main-->
         <main class="container-fluid m-0 p-0 colorBGWhite backgroundGradient">   
-            <div class="backgroud-img m-0 p-0">
+            <div class="backgroud-img m-0">
+                            <!-- Título del Nombre de la Empresa -->
+                <div class="container-fluid cover-img-ofertas text-center">
+                    <div class="container">
+                        <span class="banner-ofertas">
+                            <strong>¡Ofertas de remate!</strong>
+                        </span>
+                    </div>
+                </div>
+                <!-- BOOTSTRAP - Listado para filtar -->
+                <div class="container-fluid colorBGSearchBar">
+                    <div id="placaMadre" class="container">
+                        <div class="row justify-content-between">
+                            <a class="btn btn-secondary searchBar" href="#placaMadre">Placas Madres</a>
+                            <a class="btn btn-secondary searchBar" href="#memorias">Memorias</a>
+                            <a class="btn btn-secondary searchBar" href="#videocards">Tarjetas de Video</a>
+                            <a class="btn btn-secondary searchBar" href="#hdd">Discos Duros</a>
+                            <a class="btn btn-secondary searchBar" href="#ssd">Discos de Estado Sólido</a>
+                        </div>
+                    </div>
+                </div>
                 <!-- BOOTSTRAP - Cartas e inventario -->
-                <div class="container">
+                <div class="container pt-5">
                     <div class="row">
-                        <div class="col-12 mb-5 d-flex justify-content-center pt-5">
-                            <div class="card text-center colorBGWhite" style="width: 25rem;">
-                                <img src="../img/logoEmpresas/stockEmpresas.png" class="img-fluid p-3" alt="Placa Madre Asus 1151 ATX>
-                                <div class="card-body">
-                                <a href="contacto.html" class="btn btn-outline-secondary p-3">¿CONOCES NUESTRO STOCK?</a> <p class="card-text pb-2"><small class="text-muted">¡Hacé click para contactarnos!</small></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="placaMadre" class="row">
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/motherboards/ROGSTRIXB560-F.png" class="img-fluid p-3 zoom" alt="Placa Madre ROG Strix B560-F>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"> <strong>MB ROG Strix B560-F WIFI</strong></p>
-                                <p class="card-text m-0 p-2"> ¡La mejor del Mercado! <br> Sin lugar a dudas, podría ser una gran incorporación para tu <br><strong>#MasterRace</strong> <hr> <a href="https://rog.asus.com/latin/motherboards/rog-strix/rog-strix-b560-f-gaming-wifi-model/">Más información aquí</a> </p>
+                                <span class="oferta30">17% OFF</span>
+                                <img src="../img/motherboards/17OFFROGCrossHairVIIDarkHero.png" class="img-fluid p-3 zoom" alt="Placa Madre ROG Crosshair VIII Dark Hero">
+                                <p class="card-title tituloHardware"> <strong>MB ROG Crosshair VIII Dark Hero</strong></p>
+                                <p class="card-text m-0 p-2"> ¿Buscás overclocking a buen precio? <br> Podrás optimizar tu MasterRace de la mejor manera <br><strong>#Ofertas</strong> <hr> <a href="https://rog.asus.com/latin/motherboards/rog-crosshair/rog-crosshair-viii-dark-hero-model/">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 28.000</strong></p>
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 53.000</strong> <strong class="precioAnterior">62.010</strong></p>
                                     <div class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
@@ -80,12 +91,12 @@
                         </div>
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/motherboards/tufGamingZ490PLUS.png" class="img-fluid p-3 zoom" alt="Placa Madre TUF Gaming Z490>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>MB TUF Gaming Z490</strong></p>
-                                <p class="card-text m-0 p-2"> Si lo que buscas es la mejor relación precio/calidad del mercado <br> ¡Esta es tu mejor elección!<br> <strong>#MasterRace</strong> <hr> <a href="https://www.asrock.com/MB/Intel/Fatal1ty%20Z97%20Killer/index.la.asp">Más información aquí</a> </p>
+                                <span class="oferta30">25% OFF</span>
+                                <img src="../img/motherboards/25OFFASRockX570PhantomGamingX.png" class="img-fluid p-3 zoom" alt="Placa Madre ASRock X570 Phantom Gaming X">
+                                <p class="card-title tituloHardware"><strong>MB ASRock X570 Phantom Gaming X</strong></p>
+                                <p class="card-text m-0 p-2"> La mejor relación precio-calidad que podés encontrar <br> ¡Elegila!<br> <strong>#Ofertas</strong> <hr> <a href="https://www.asrock.com/mb/AMD/X570%20Phantom%20Gaming%20X/index.la.asp">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 15.000</strong></p>
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 34.672</strong> <strong class="precioAnterior">46.230</strong></p>
                                     <div class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
@@ -94,28 +105,28 @@
                         </div>
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/motherboards/MSIB450TOMAHAWK.png" class="img-fluid p-3 zoom" alt="Placa Madre MSI B450 Tomahawk>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>MB MSI B450 TOMAHAWK</strong></p>
-                                <p class="card-text m-0 p-2"> Si lo que buscas es más bien ingresar al mundo gamer con AMD <br> ¡Esta debería ser tu elección! <br> <strong>#MasterRace</strong> <hr> <a href="https://es.msi.com/Motherboard/B85-G43-GAMING/Specification">Más información aquí</a> </p>
+                                <span class="oferta30">¡46% OFF!</span>
+                                <img src="../img/motherboards/46OFFMSIMAGB460Torpedo.png" class="img-fluid p-3 zoom" alt="Placa Madre MSI MAG B460 Torpedo">
+                                <p class="card-title tituloHardware"><strong>MB MSI MAG B460 Torpedo</strong></p>
+                                <p class="card-text m-0 p-2"> ¡Realmente no vas a encontrar un mejor precio! <br> ¡No tengas dudas en elegir MSI! <br> <strong>#BestDeal</strong> <hr> <a href="https://es.msi.com/Motherboard/MAG-B460-TORPEDO">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 11.000</strong></p>
-                                    <div class="btn-group shoppingItem">
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 30.240</strong> <strong class="precioAnterior">56.000</strong></p>
+                                    <div id="memorias" class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="memorias" class="row">
+                    <div  class="row">
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/memoriasRAM/gSKILLF43200C.png" class="img-fluid p-3 zoom" alt="GSKILL Trident Z F4-3200>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>GSkill Trident Z F4-3200</strong></p>
-                                <p class="card-text m-0 p-2">¡8gb a 3200hz para gaming! <br> Sumala a tu equipo <br> <strong>#MasterRace</strong> <hr> <a href="https://www.gskill.com/product/165/168/1536031943/F4-3200C14D-16GTZKOTrident-ZDDR4-3200MHz-CL14-14-14-34-1.35V16GB-(2x8GB)">Más información aquí</a> </p>
+                                <span class="oferta30">12% OFF</span>
+                                <img src="../img/memoriasRAM/12OFFgSKILLTridentZNeoF4-2666C.png" class="img-fluid p-3 zoom" alt="GSKILL Trident Z NEO F4-2666C">
+                                <p class="card-title tituloHardware"><strong>GSkill Trident Z Neo F4-2666C 16gb (2x8gb)</strong></p>
+                                <p class="card-text m-0 p-2">¡16gb a precio rebajado! <br> Sumala a tu equipo <br> <strong>#Ofertas</strong> <hr> <a href="https://www.gskill.com/product/165/326/1562837300/F4-2666C18D-16GTZNTrident-Z-NeoDDR4-2666MHz-CL18-18-18-43-1.20V16GB-(2x8GB)">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 25.500</strong></p>
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 15.312</strong> <strong class="precioAnterior">17.400</strong></p>
                                     <div class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
@@ -124,12 +135,12 @@
                         </div>
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/memoriasRAM/gSkillF42800C.png" class="img-fluid p-3 zoom" alt="GSKILL Trident Z F4-2800x2>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>GSkill Trident Z F4-2800x2</strong></p>
-                                <p class="card-text m-0 p-2">¡Doble RAM x8gb a 2800ghz! <br> La mejor relación precio/calidad <br> <strong>#MasterRace</strong> <hr> <a href="https://www.gskill.com/product/165/168/1536031943/F4-3200C14D-16GTZKOTrident-ZDDR4-3200MHz-CL14-14-14-34-1.35V16GB-(2x8GB)">Más información aquí</a> </p>
+                                <span class="oferta30">20% OFF</span>
+                                <img src="../img/memoriasRAM/20OFFgSKILLTridentZDDR43200.png" class="img-fluid p-3 zoom" alt="GSKILL Trident Z DDR4 3200MHz">
+                                <p class="card-title tituloHardware"><strong>GSkill Trident Z DDR4-3200MHz 16gb (2x8gb)</strong></p>
+                                <p class="card-text m-0 p-2">¡16GB para tu Dual Channel a 3200MHz! <br> ¡De lo mejor que podés encontrar! <br> <strong>#Ofertas</strong> <hr> <a href="https://www.gskill.com/product/165/168/1536043242/F4-3200C14D-16GTZSWTrident-ZDDR4-3200MHz-CL14-14-14-34-1.35V16GB-(2x8GB)">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 25.000</strong></p>
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 60.679</strong> <strong class="precioAnterior">75.849</strong></p>
                                     <div class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
@@ -138,72 +149,28 @@
                         </div>
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/memoriasRAM/gSKILLF42400C.png" class="img-fluid p-3 zoom" alt="GSKILL Trident Z F4-2400x2>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>GSkill Trident Z F4-2400x2</strong></p>
-                                <p class="card-text m-0 p-2">¡Doble RAM x8gb a 2400ghz! <br> ¡Arrancá con todo! <br> <strong>#MasterRace</strong> <hr> <a href="https://www.gskill.com/product/165/168/1536547950/F4-2400C15D-16GTZRTrident-Z-RGBDDR4-2400MHz-CL15-15-15-35-1.20V16GB-(2x8GB)">Más información aquí</a> </p>
+                                <span class="oferta30">33% OFF</span>
+                                <img src="../img/memoriasRAM/33OFFgSKILLTridentZ320032GB.png" class="img-fluid p-3 zoom" alt="GSKILL Trident Z DDR4-3200MHz">
+                                <p class="card-title tituloHardware"><strong>GSkill Trident Z DDR4-3200MHz 64gb (4x16gb) </strong></p>
+                                <p class="card-text m-0 p-2">¡Cuatriplicá tu RAM! <br> Una excelente elección <br> <strong>#BestDeal</strong> <hr> <a href="https://www.gskill.com/specification/165/168/1536047134/F4-3200C16Q2-128GTZKY-Specification">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 15.500</strong></p>
-                                    <div class="btn-group shoppingItem">
-                                        <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="videocards" class="row">
-                        <div class="col-md-4 mb-5 d-flex justify-content-center">
-                            <div class="card">
-                                <img src="../img/placasVideo/MSIGFRTX3090.png" class="img-fluid p-3 zoom" alt="MSI GeForce RTX 3090 Gaming X 24G>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>MSI GeForce RTX 3090 Gaming X</strong></p>
-                                <p class="card-text m-0 p-2"> ¡Tope de Gama para vos! <br> ¡24GB GDDR6X! <br> <strong>#MasterRace</strong> <hr> <a href="https://latam.msi.com/Graphics-Card/GeForce-RTX-3090-GAMING-X-TRIO-24G">Más información aquí</a> </p>
-                                <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 360.000</strong></p>
-                                    <div class="btn-group shoppingItem">
-                                        <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-5 d-flex justify-content-center">
-                            <div class="card">
-                                <img src="../img/placasVideo/MSIGFRTX2070S.png" class="img-fluid p-3 zoom" alt="MSI GeForce RTX 2070 SUPER Gaming X>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>MSI GeForce RTX 2070 SUPER</strong></p>
-                                <p class="card-text m-0 p-2"> ¡Una de la mejor en gama media! <br> ¡8GB GDDR6X! <br> <strong>#MasterRace</strong> <hr> <a href="https://latam.msi.com/Graphics-Card/GeForce-RTX-2070-SUPER-GAMING-X">Más información aquí</a> </p>
-                                <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 135.000</strong></p>
-                                    <div class="btn-group shoppingItem">
-                                        <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-5 d-flex justify-content-center">
-                            <div class="card">
-                                <img src="../img/placasVideo/GIGABYTEGFGTX1660S.png" class="img-fluid p-3 zoom" alt="Gigabyte GTX 1660 SUPER>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>Gigabyte GTX 1660 SUPER</strong></p>
-                                <p class="card-text m-0 p-2"> ¡De lo mejor para arrancar en el gaming! <br> ¡4GB GDDR6X! <br> <strong>#MasterRace</strong> <hr> <a href="https://www.gigabyte.com/ar/Graphics-Card/GV-N166SGAMING-OC-6GD#kf">Más información aquí</a> </p>
-                                <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 32.000</strong></p>
-                                    <div class="btn-group shoppingItem">
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 90.450</strong> <strong class="precioAnterior">135.000</strong></p>
+                                    <div id="videocards" class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div id="hdd" class="row">
+                    <div class="row">
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/discosDuros/HDDWDBLUE2TB.png" class="img-fluid p-3 zoom" alt="HDD Western Digital 2TB>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>HDD Western Digital Blue 2TB</strong></p>
-                                <p class="card-text m-0 p-2"> ¡Lo mejor para olvidarse del poco espacio! <br> ¡2TB sumamente rápidos! <br> <strong>#MasterRace</strong> <hr> <a href="https://shop.westerndigital.com/products/internal-drives/wd-blue-mobile-sata-hdd#WD20SPZX">Más información aquí</a> </p>
+                                <span class="oferta30">10% OFF</span>
+                                <img src="../img/placasVideo/10OFFGeForceRTX34090VENTUS3X24G.png" class="img-fluid p-3 zoom" alt="MSI GeForce RTX 3090 VENTUS 3X 24G">
+                                <p class="card-title tituloHardware"><strong>MSI GeForce RTX 3090 VENTUS 3X 24G</strong></p>
+                                <p class="card-text m-0 p-2"> ¡Increíble! Con precio rebajado <br> ¡24GB GDDR6X! <br> <strong>#Ofertas</strong> <hr> <a href="https://latam.msi.com/Graphics-Card/GeForce-RTX-3090-VENTUS-3X-24G/Specification">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 7.000</strong></p>
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 301.500</strong> <strong class="precioAnterior">335.000</strong></p>
                                     <div class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
@@ -212,12 +179,12 @@
                         </div>
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/discosDuros/HDDWDBLUE500GB.png" class="img-fluid p-3 zoom" alt="HDD Western Digital 500GB>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>HDD Western Digital Blue 500GB</strong></p>
-                                <p class="card-text m-0 p-2"> Lo indispensable para jugar sin preocuparte. <br> ¡500GB sumamente rápidos! <br> <strong>#MasterRace</strong> <hr> <a href="https://shop.westerndigital.com/products/internal-drives/wd-blue-mobile-sata-hdd#WD5000LPCX">Más información aquí</a> </p>
+                                <span class="oferta30">24% OFF</span>
+                                <img src="../img/placasVideo/24OFFGeForceRTX2080TiGAMINGXTRIO.png" class="img-fluid p-3 zoom" alt="MSI GeForce RTX 2080Ti Gaming X TRIO">
+                                <p class="card-title tituloHardware"><strong>MSI GeForce RTX 2080Ti Gaming X TRIO</strong></p>
+                                <p class="card-text m-0 p-2"> ¡Un lujo necesario! <br> ¡11GB GDDR6! <br> <strong>#Ofertas</strong> <hr> <a href="https://latam.msi.com/Graphics-Card/GeForce-RTX-2080-Ti-GAMING-X-TRIO/Specification">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 5.200</strong></p>
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 220.400</strong> <strong class="precioAnterior">290.000</strong></p>
                                     <div class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
@@ -226,12 +193,56 @@
                         </div>
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/discosDuros/HDDWDBLUE320GB.png" class="img-fluid p-3 zoom" alt="HDD Western Digital 320GB>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>HDD Western Digital Blue 320GB</strong></p>
-                                <p class="card-text m-0 p-2"> ¡Para iniciar el camino del gaming! <br> ¡320GB más que suficientes! <br> <strong>#MasterRace</strong> <hr> <a href="https://shop.westerndigital.com/products/internal-drives/wd-blue-mobile-sata-hdd#WD3200LPCX">Más información aquí</a> </p>
+                                <span class="oferta30">¡50% OFF!</span>
+                                <img src="../img/placasVideo/50OFFGigabyteRadeonRX480G18GB.png" class="img-fluid p-3 zoom" alt="Gigabyte AMD Radeon RX480 G1 8GB">
+                                <p class="card-title tituloHardware"><strong>Gigabyte AMD Radeon RX480 G1 4GB</strong></p>
+                                <p class="card-text m-0 p-2"> ¡No vas a encontrar un mejor precio! <br> ¡4GB GDDR5! <br> <strong>#BestDeal</strong> <hr> <a href="https://www.gigabyte.com/ar/Graphics-Card/GV-RX480G1-GAMING-4GD#kf">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 3.900</strong></p>
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 30.000</strong> <strong class="precioAnterior">60.000</strong></p>
+                                    <div id="hdd" class="btn-group shoppingItem">
+                                        <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card">
+                                <span class="oferta30">15% OFF</span>
+                                <img src="../img/discosDuros/HDDWDBLUE2TB.png" class="img-fluid p-3 zoom" alt="HDD Western Digital 2TB">
+                                <p class="card-title tituloHardware"><strong>HDD Western Digital Blue 2TB</strong> 2 Unidades</p>
+                                <p class="card-text m-0 p-2"> Si necesitas dos unidades <br> ¡Esta es la mejor elección! <br> <strong>#Ofertas</strong> <hr> <a href="https://shop.westerndigital.com/products/internal-drives/wd-blue-mobile-sata-hdd#WD20SPZX">Más información aquí</a> </p>
+                                <div class="card-footer">
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 11.900</strong> <strong class="precioAnterior">14.000</strong></p>
+                                    <div class="btn-group shoppingItem">
+                                        <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card">
+                                <span class="oferta30">18% OFF</span>
+                                <img src="../img/discosDuros/HDDWDBLUE500GB.png" class="img-fluid p-3 zoom" alt="HDD Western Digital 500GB">
+                                <p class="card-title tituloHardware"><strong>HDD Western Digital Blue 500GB</strong> 3 Unidades</p>
+                                <p class="card-text m-0 p-2"> Si necesitas tres unidades <br> ¡500GB cada uno sumamente rápidos! <br> <strong>#Ofertas</strong> <hr> <a href="https://shop.westerndigital.com/products/internal-drives/wd-blue-mobile-sata-hdd#WD5000LPCX">Más información aquí</a> </p>
+                                <div class="card-footer">
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 12.792</strong> <strong class="precioAnterior">15.600</strong></p>
+                                    <div class="btn-group shoppingItem">
+                                        <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 mb-5 d-flex justify-content-center">
+                            <div class="card">
+                                <span class="oferta30">¡45% OFF!</span>
+                                <img src="../img/discosDuros/HDDWDBLUE320GB.png" class="img-fluid p-3 zoom" alt="HDD Western Digital 320GB">
+                                <p class="card-title tituloHardware"><strong>HDD Western Digital Blue 320GB</strong> 6 Unidades</p>
+                                <p class="card-text m-0 p-2"> ¡Precio al por mayor! <br> ¡Seis unidades increíbles! <br> <strong>#BestDeal</strong> <hr> <a href="https://shop.westerndigital.com/products/internal-drives/wd-blue-mobile-sata-hdd#WD3200LPCX">Más información aquí</a> </p>
+                                <div class="card-footer">
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 12.870</strong> <strong class="precioAnterior">23.400</strong></p>
                                     <div class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
@@ -242,12 +253,12 @@
                     <div id="ssd" class="row">
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/discosSolidos/WDBLACKP502TB.png" class="img-fluid p-3 zoom" alt="SSD Western Digital Black P50 2TB>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>SSD Western Digital Black P50 2TB</strong></p>
-                                <p class="card-text m-0 p-2"> ¡Realmente lo mejor de lo mejor! <br> ¡2TB de los más rápidos que hay! <br> <strong>#MasterRace</strong> <hr> <a href="https://shop.westerndigital.com/es-es/products/portable-drives/wd-black-p50-game-drive-usb-3-2-ssd#WDBA3S0020BBK-WESN">Más información aquí</a> </p>
+                                <span class="oferta30">8% OFF</span>
+                                <img src="../img/discosSolidos/WDBLACKP502TB.png" class="img-fluid p-3 zoom" alt="SSD Western Digital Black P50 2TB">
+                                <p class="card-title tituloHardware"><strong>SSD Western Digital Black P50 2TB</strong> 2 Unidades</p>
+                                <p class="card-text m-0 p-2"> ¡Dos unidades! <br> ¡Nadie va a pararte! <br> <strong>#Ofertas</strong> <hr> <a href="https://shop.westerndigital.com/es-es/products/portable-drives/wd-black-p50-game-drive-usb-3-2-ssd#WDBA3S0020BBK-WESN">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 76.000</strong></p>
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 139.840</strong> <strong class="precioAnterior">152.000</strong></p>
                                     <div class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
@@ -256,12 +267,12 @@
                         </div>
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/discosSolidos/SSDWDBlue500GB.png" class="img-fluid p-3 zoom" alt="SSD Western Digital Blue 500GB>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>SSD Western Digital Blue 500GB</strong></p>
-                                <p class="card-text m-0 p-2"> Si buscas eficiencia y eficacia <br> ¡Este SSD es tu elección! <br> <strong>#MasterRace</strong> <hr> <a href="https://shop.westerndigital.com/es-la/products/internal-drives/wd-blue-sata-2-5-ssd#WDS500G2B0A">Más información aquí</a> </p>
+                                <span class="oferta30">17% OFF</span>
+                                <img src="../img/discosSolidos/SSDWDBlue500GB.png" class="img-fluid p-3 zoom" alt="SSD Western Digital Blue 500GB">
+                                <p class="card-title tituloHardware"><strong>SSD Western Digital Blue 500GB</strong> 3 Unidades</p>
+                                <p class="card-text m-0 p-2"> Si querés compartir con tres amigos <br> ¡La mejor opción! <br> <strong>#Ofertas</strong> <hr> <a href="https://shop.westerndigital.com/es-la/products/internal-drives/wd-blue-sata-2-5-ssd#WDS500G2B0A">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 7.500</strong></p>
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 18.675</strong> <strong class="precioAnterior">22.500</strong></p>
                                     <div class="btn-group shoppingItem">
                                         <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
@@ -270,14 +281,14 @@
                         </div>
                         <div class="col-md-4 mb-5 d-flex justify-content-center">
                             <div class="card">
-                                <img src="../img/discosSolidos/SSDWDGreen120GB.png" class="img-fluid p-3 zoom" alt="SSD Western Digital Green 120GB>
-                                <div class="card-body">
-                                <p class="card-title tituloHardware"><strong>SSD Western Digital Green 120GB</strong></p>
-                                <p class="card-text m-0 p-2"> Lo mejor para comenzar <br> ¡En segundos encenderá tu S.O.! <br> <strong>#MasterRace</strong> <hr> <a href="https://shop.westerndigital.com/es-la/products/internal-drives/wd-green-sata-2-5-ssd#WDS120G2G0A">Más información aquí</a> </p>
+                                <span class="oferta30">30% OFF</span>
+                                <img src="../img/discosSolidos/SSDWDGreen120GB.png" class="img-fluid p-3 zoom" alt="SSD Western Digital Green 120GB">
+                                <p class="card-title tituloHardware"><strong>SSD Western Digital Green 120GB</strong> 10 Unidades</p>
+                                <p class="card-text m-0 p-2"> Podría servir para tu emprendimiento <br> ¡Vamos! <br> <strong>#BestDeak</strong> <hr> <a href="https://shop.westerndigital.com/es-la/products/internal-drives/wd-green-sata-2-5-ssd#WDS120G2G0A">Más información aquí</a> </p>
                                 <div class="card-footer">
-                                    <p class="titularPrecio">Precio: <strong>ARS$ 3.000</strong></p>
+                                    <p class="titularPrecioOferta">Precio: <strong>ARS$ 21.000</strong> <strong class="precioAnterior">30.000</strong></p>
                                     <div class="btn-group shoppingItem">
-                                        <a href="misCompras.html" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
+                                        <a href="javascript:;" type="button" class="btn btn-primary buttonLoading"><img src="../img/shoppingItem.png"> Comprar</a>
                                     </div>
                                 </div>
                             </div>
@@ -323,6 +334,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Button con Loading-->
         <script>
             $(document).ready(function() {
                 $(".buttonLoading").click(function() {
@@ -335,6 +347,7 @@
                 });
             });
         </script>
+        <!-- Zoom con transición-->
         <script>
             $(document).ready(function(){
                 $('.zoom').hover(function() {

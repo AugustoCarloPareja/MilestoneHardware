@@ -1,5 +1,5 @@
-.cover-img {
-    background-image: url(../img/quienesSomos/quienesSomosFondo.png);
+.cover-img-ofertas {
+    background-image: url(../img/quienesSomos/quienesSomosFondo2.png);
     background-size:cover;
     display: flex;
     justify-content: center;
@@ -26,10 +26,10 @@
     }
 }
 
-.banner-mh {
+.banner-ofertas {
     font-family: 'Rubik Mono One', sans-serif;
     color:white;
-    text-shadow: 2px 2px 2px $color-MHRed;
+    text-shadow: 2px 2px 2px rgb(82, 82, 17);
     /* Extra small devices (phones, 600px and down) */
     @media only screen and (max-width: 600px) {
         font-size: 35px;
@@ -49,45 +49,6 @@
     /* Extra large devices (large laptops and desktops, 1200px and up) */
     @media only screen and (min-width: 1200px) {
         font-size: 60px;
-        text-shadow: 0px 5px 2px $color-MHRed;
+        text-shadow: 0px 5px 2px rgb(82, 82, 17);
     }
-}
-
-.quienes-somos-title {
-    font-family: 'Bowlby One SC', sans-serif;
-    color:white;
-    font-size: 40px;
-}
-
-.quienes-somos-text {
-    font-family: 'Bowlby One SC', sans-serif;
-    color:white;
-    font-size: 18px;
-}
-
-.contact {
-    margin-bottom: 62px;
-    padding-left: 32px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    border-left: 5px solid #ff5e00;
-    
-}
-
-.valoresMH {
-    margin-bottom: 62px;
-    padding-left: 32px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    border-left: 5px solid #2ec21a;
-}
-
-.quienes-somos-titles{
-    font-size: 25px;
-    color: $color-White;
-}
-
-.quienes-somos-description{
-    font-size: 18px;
-    color: $color-White;
 }
