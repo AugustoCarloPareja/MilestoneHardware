@@ -41,23 +41,21 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>                    
                         <div class="collapse navbar-collapse justify-content-center" id="basicNavBar">
-                            <div class="navbar-nav">
-                                <a href="secciones/quienesSomos.html" class="nav-item colorNavBar mr-2 pl-4 pr-4">Quiénes somos</a>
-                                <a href="secciones/contacto.html" class="nav-item colorNavBar ml-2 mr-2  pl-4 pr-4">Contacto</a>
-                                <a href="secciones/ofertas.html" class="nav-item colorNavBar ml-2 mr-2  pl-4 pr-4">¡Ofertas!</a>
-                                <a href="secciones/miscompras.html" class="nav-item colorNavBar ml-2 mr-2 pl-4 pr-4">Mis compras</a>
+                            <div class="navbar-nav align-items-center">
+                                <a href="secciones/quienesSomos.html" class="nav-item colorNavBar">Quiénes somos</a>
+                                <a href="secciones/contacto.html" class="nav-item colorNavBar">Contacto</a>
+                                <a href="secciones/ofertas.html" class="nav-item colorNavBar">¡Ofertas!</a>
+                                <a href="secciones/miscompras.html" class="nav-item colorNavBar mr-5">Mis compras</a>
+                                <!-- BOOSTRAP-  Barra de búsqueda sin acción (#)-->
+                                <div class="row">
+                                    <form action="#" class="d-sm-inline-flex">
+                                        <input type="text" class="form-control colorBGWhite" placeholder="¿Qué buscas?" required name="search">
+                                        <button class="btn btn-outline-success colorBGLight" type="search"><i>Buscar</i></button>                                       
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </nav>
-                    <!-- BOOSTRAP-  Barra de búsqueda sin acción (#)-->
-                    <div class="container">
-                        <div class="row">
-                            <form action="#" class="col-12 d-sm-inline-flex">
-                                <input type="text" class="form-control colorBGWhite" placeholder="¿Qué buscas?" required name="search">
-                                <button class="btn btn-outline-success colorBGLight" type="search"><i>Buscar</i></button>                                       
-                            </form>
-                        </div>
-                    </div>
+                    </nav> 
                 </div>
             </div>
         </header>
@@ -66,7 +64,7 @@
         <main class="container-fluid m-0 p-0 colorBGWhite backgroundGradient">   
             <div class="backgroud-img">
                 <!-- BOOTSTRAP - Listado para filtar -->
-                <div class="container-fluid colorBGSearchBar">
+                <div class="container-fluid colorBGSearchBar searchBarSticky">
                     <div class="container">
                         <div class="row justify-content-center justify-content-lg-between">
                             <!-- Barra de Navegación Secundaria con ID específicos de anclaje-->
@@ -82,7 +80,7 @@
                 <!-- BOOTSTRAP - Cartas e inventario -->
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 mb-5 d-flex justify-content-center pt-5">
+                        <div class="col-12 mb-5 d-flex justify-content-center firstCard">
                             <div class="card text-center colorBGWhite" style="width: 25rem;">
                                 <img src="img/logoEmpresas/stockEmpresas.png" class="img-fluid p-3" alt="Placa Madre Asus 1151 ATX">
                                 <a id="irAPlacaMadre" href="secciones/contacto.html" class="btn btn-outline-secondary p-3">¿CONOCES NUESTRO STOCK?</a> <p class="card-text pb-2"><small class="text-muted">¡Hacé click para contactarnos!</small></p>
@@ -217,7 +215,7 @@
                             <div class="card">
                                 <img src="img/discosDuros/HDDWDBLUE2TB.png" class="img-fluid p-3 zoom" alt="HDD Western Digital 2TB">
                                 <p class="card-title tituloHardware"><strong>HDD Western Digital Blue 2TB</strong></p>
-                                <p class="card-text m-0 p-2"> ¡Lo mejor para olvidarse del poco espacio! <br> ¡2TB sumamente rápidos! <br> <strong>#MasterRace</strong> <hr> <a href="https://shop.westerndigital.com/products/internal-drives/wd-blue-mobile-sata-hdd#WD20SPZX">Más información aquí</a> </p>
+                                <p class="card-text m-0 p-2"> ¡Lo mejor para olvidarse del poco espacio! <br> ¡2TB sumamente rápidos! <br> ¡Aprovechalo! <br> <strong>#MasterRace</strong> <hr> <a href="https://shop.westerndigital.com/products/internal-drives/wd-blue-mobile-sata-hdd#WD20SPZX">Más información aquí</a> </p>
                                 <div class="card-footer">
                                     <p class="titularPrecio">Precio: <strong>ARS$ 7.000</strong></p>
                                     <div class="btn-group shoppingItem">
@@ -243,7 +241,7 @@
                             <div class="card">
                                 <img src="img/discosDuros/HDDWDBLUE320GB.png" class="img-fluid p-3 zoom" alt="HDD Western Digital 320GB">
                                 <p class="card-title tituloHardware"><strong>HDD Western Digital Blue 320GB</strong></p>
-                                <p class="card-text m-0 p-2"> ¡Para iniciar el camino del gaming! <br> ¡320GB más que suficientes! <br> <strong>#MasterRace</strong> <hr> <a href="https://shop.westerndigital.com/products/internal-drives/wd-blue-mobile-sata-hdd#WD3200LPCX">Más información aquí</a> </p>
+                                <p class="card-text m-0 p-2"> ¡Para iniciar el camino del gaming! <br> ¡320GB más que suficientes! <br> ¡Tiene que ser tuyo! <br> <strong>#MasterRace</strong> <hr> <a href="https://shop.westerndigital.com/products/internal-drives/wd-blue-mobile-sata-hdd#WD3200LPCX">Más información aquí</a> </p>
                                 <div id="irASsd" class="card-footer">
                                     <p class="titularPrecio">Precio: <strong>ARS$ 3.900</strong></p>
                                     <div class="btn-group shoppingItem">

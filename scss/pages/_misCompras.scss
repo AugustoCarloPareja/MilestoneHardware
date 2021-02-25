@@ -7,7 +7,7 @@
     top:0;
     left: 15rem; /* 10rem is the min-width of dropdown-menu */
     margin-top:-6px;
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 768px) {
         left: 0;
         top: 3rem;
     }
@@ -17,6 +17,7 @@
 .dropdown-menu > li > a:hover:after {
     text-decoration: underline;
     transform: rotate(-90deg);
+
     @media only screen and (max-width: 600px) {
         transform: none;
     }
@@ -33,22 +34,30 @@
     margin-top: 25px;
     border-radius: 30px;
     @media only screen and (max-width: 600px) {
-        max-width: 200px;
+        min-width: 220px;
     }
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
-        max-width: 220px;
+        max-width: 230px;
     }
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
-        max-width: 230px;
+        max-width: 260px;
     }
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
-        max-width: 240px;
+        max-width: 450px;
     }
 }
 
 .imagenCompras {
-    max-height: 200px;
+    max-height: 180px;
+    max-width: 200px;
+    padding: 15px 5px 0px 5px;
+}
+
+.textoLocalidad {
+    @include centradoFlex;
+    min-width: 150px;
+    padding:10px;
 }
