@@ -421,7 +421,6 @@ input[type=reset] {
       min-height: 250px; } }
 
 .banner-mh {
-  font-family: 'Rubik Mono One', sans-serif;
   color: white;
   text-shadow: 2px 2px 2px #560600;
   /* Extra small devices (phones, 600px and down) */
@@ -447,7 +446,6 @@ input[type=reset] {
       text-shadow: 0px 5px 2px #560600; } }
 
 .quienes-somos-title {
-  font-family: 'Bowlby One SC', sans-serif;
   color: white;
   /* Extra small devices (phones, 600px and down) */
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -471,7 +469,6 @@ input[type=reset] {
       font-size: 40px; } }
 
 .quienes-somos-text {
-  font-family: 'Bowlby One SC', sans-serif;
   color: white;
   font-size: 17px; }
 
@@ -525,7 +522,6 @@ input[type=reset] {
       min-height: 250px; } }
 
 .banner-ofertas {
-  font-family: 'Rubik Mono One', sans-serif;
   color: white;
   text-shadow: 2px 2px 2px #525211;
   /* Extra small devices (phones, 600px and down) */
@@ -549,3 +545,51 @@ input[type=reset] {
     .banner-ofertas {
       font-size: 60px;
       text-shadow: 0px 5px 2px #525211; } }
+
+.dropdown-submenu {
+  position: relative; }
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 15rem;
+  /* 10rem is the min-width of dropdown-menu */
+  margin-top: -6px; }
+  @media only screen and (max-width: 600px) {
+    .dropdown-submenu > .dropdown-menu {
+      left: 0;
+      top: 3rem; } }
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+  text-decoration: underline;
+  transform: rotate(-90deg); }
+  @media only screen and (max-width: 600px) {
+    .dropdown-menu > li > a:hover:after {
+      transform: none; } }
+
+.lineaDivisora {
+  border-left: 2px solid #2ec21a; }
+
+.cardsCompras {
+  background-color: #a5a5a570;
+  max-width: 250px;
+  margin-top: 25px;
+  border-radius: 30px;
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */ }
+  @media only screen and (max-width: 600px) {
+    .cardsCompras {
+      max-width: 200px; } }
+  @media only screen and (min-width: 600px) {
+    .cardsCompras {
+      max-width: 220px; } }
+  @media only screen and (min-width: 768px) {
+    .cardsCompras {
+      max-width: 230px; } }
+  @media only screen and (min-width: 992px) {
+    .cardsCompras {
+      max-width: 240px; } }
+
+.imagenCompras {
+  max-height: 200px; }
