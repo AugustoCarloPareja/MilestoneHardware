@@ -4,7 +4,8 @@
 }
 
 .colorNavBar {
-    padding: 15px;
+    padding: 10px;
+    margin: 5px;
     color: #ffffff;
     border-radius: 5px; 
     text-align: center;
@@ -24,7 +25,15 @@
 
 .colorBGSearchBar{
     background-color: rgba(80, 74, 74, 0.4);
+    position: sticky;
 }
+
+.searchBarSticky {
+    position:fixed;
+	z-index:1000;
+	top: 20;
+}
+
 
 .btn-outline-success {
     color: $color-White;
