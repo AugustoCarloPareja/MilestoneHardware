@@ -87,12 +87,12 @@
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
     box-shadow: 0 5px 10px 0px $color-UDark;
-    
-    img {
-        height: 25px;
-    }
 }
-  
+
+.scroll-up {
+    height: 25px;
+}
+
   #scroll-arriba:hover {
     background-color: $color-green; /* Add a dark-grey background on hover */
   }

@@ -227,8 +227,9 @@ input[type=reset] {
   font-size: 18px;
   /* Increase font size */
   box-shadow: 0 5px 10px 0px #0d0d0d; }
-  #scroll-arriba img {
-    height: 25px; }
+
+.scroll-up {
+  height: 25px; }
 
 #scroll-arriba:hover {
   background-color: #3d8d41;
