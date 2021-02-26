@@ -1,3 +1,11 @@
+// Logo MH (sirve como navegación)
+.logoMH {
+    @media (max-width: 767px) {
+        max-width: 120px !important;
+        padding-top: 8px;
+    }
+}
+
 // Barra de Navegación - Buttons
 .navbar-brand {
     font-size: 35px;

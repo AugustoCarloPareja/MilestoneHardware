@@ -141,6 +141,11 @@ input[type=reset] {
     box-shadow: 0 3px 7px 0px #0d0d0d;
     transition: all 0.2s ease; }
 
+@media (max-width: 767px) {
+  .logoMH {
+    max-width: 120px !important;
+    padding-top: 8px; } }
+
 .navbar-brand {
   font-size: 35px; }
 
