@@ -49,21 +49,26 @@
         max-width: 450px;
     }
 
-    .btn-secondary, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
-        background-color: $color-Normal;
-        border-color: $color-Dark;
-        
-        &:hover, &:focus, &:active{
-           background-color: $color-Dark !important; 
-           border-color: $color-ULight !important;
-           transition:(all .2s ease);
+    .dropdown {
+        .btn-secondary, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+            background-color: $color-Normal;
+            border-color: $color-Dark;
+            
+            &:hover, &:focus, &:active{
+               background-color: $color-Dark !important; 
+               border-color: $color-ULight !important;
+               transition:(all .2s ease);
+            }
+        }
+
+        .dropdown-menu {
+            .dropdown-item:active {
+                background-color: $color-Dark !important; 
+                transition:(all .2s ease);
+            }
         }
     }
 
-    .dropdown-item:active {
-    background-color: $color-Dark !important; 
-    transition:(all .2s ease);
-    }
 }
 
 .imagenCompras {
