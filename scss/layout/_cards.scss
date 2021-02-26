@@ -34,8 +34,6 @@
 }
 
 .firstCard {
-    margin-top: 5px;
-
     @media only screen and (max-width: 600px) {
         margin-top: 250px;
     }
@@ -50,6 +48,24 @@
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
         margin-top: 100px;
+    }
+}
+
+.firstRow {
+    @media only screen and (max-width: 600px) {
+        margin-top: 60px;
+    }
+    /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) {
+        margin-top: 35px;
+    }
+    /* Medium devices (landscape tablets, 768px and up) */
+    @media only screen and (min-width: 768px) {
+        margin-top: 45px;
+    }
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        margin-top: 50px;
     }
 }
 

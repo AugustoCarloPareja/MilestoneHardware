@@ -268,7 +268,6 @@ input[type=reset] {
     object-fit: fill; }
 
 .firstCard {
-  margin-top: 5px;
   /* Small devices (portrait tablets and large phones, 600px and up) */
   /* Medium devices (landscape tablets, 768px and up) */
   /* Large devices (laptops/desktops, 992px and up) */ }
@@ -284,6 +283,23 @@ input[type=reset] {
   @media only screen and (min-width: 992px) {
     .firstCard {
       margin-top: 100px; } }
+
+.firstRow {
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  /* Medium devices (landscape tablets, 768px and up) */
+  /* Large devices (laptops/desktops, 992px and up) */ }
+  @media only screen and (max-width: 600px) {
+    .firstRow {
+      margin-top: 60px; } }
+  @media only screen and (min-width: 600px) {
+    .firstRow {
+      margin-top: 35px; } }
+  @media only screen and (min-width: 768px) {
+    .firstRow {
+      margin-top: 45px; } }
+  @media only screen and (min-width: 992px) {
+    .firstRow {
+      margin-top: 50px; } }
 
 .titularPrecio {
   font-family: 'Raleway', sans-serif;
