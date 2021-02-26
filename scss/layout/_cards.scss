@@ -35,15 +35,15 @@
 
 .firstCard {
     @media only screen and (max-width: 600px) {
-        margin-top: 250px;
+        margin-top: 40px;
     }
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
-        margin-top: 175px;
+        margin-top: 45px;
     }
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
-        margin-top: 180px;
+        margin-top: 48px;
     }
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {

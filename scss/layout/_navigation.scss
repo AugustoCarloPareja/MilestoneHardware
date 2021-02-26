@@ -29,9 +29,13 @@
 }
 
 .searchBarSticky {
-    position:fixed;
+    position: static;
 	z-index:1000;
 	top: 20;
+    /* Large devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+        position:fixed;
+    }
 }
 
 
@@ -73,19 +77,19 @@
 
 /* Scroll para ir arriba*/
 #scroll-arriba {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: $color-ULight; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: $color-ULight;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
     box-shadow: 0 5px 10px 0px $color-UDark;
 }
 
@@ -94,5 +98,5 @@
 }
 
   #scroll-arriba:hover {
-    background-color: $color-green; /* Add a dark-grey background on hover */
+    background-color: $color-green;
   }

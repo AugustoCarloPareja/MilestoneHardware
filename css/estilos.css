@@ -164,9 +164,13 @@ input[type=reset] {
   position: sticky; }
 
 .searchBarSticky {
-  position: fixed;
+  position: static;
   z-index: 1000;
-  top: 20; }
+  top: 20;
+  /* Large devices (laptops/desktops, 992px and up) */ }
+  @media only screen and (min-width: 992px) {
+    .searchBarSticky {
+      position: fixed; } }
 
 .btn-outline-success {
   color: white;
@@ -201,39 +205,25 @@ input[type=reset] {
 /* Scroll para ir arriba*/
 #scroll-arriba {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Fixed/sticky position */
   bottom: 20px;
-  /* Place the button at the bottom of the page */
   right: 30px;
-  /* Place the button 30px from the right */
   z-index: 99;
-  /* Make sure it does not overlap */
   border: none;
-  /* Remove borders */
   outline: none;
-  /* Remove outline */
   background-color: #737373;
-  /* Set a background color */
   color: white;
-  /* Text color */
   cursor: pointer;
-  /* Add a mouse pointer on hover */
   padding: 15px;
-  /* Some padding */
   border-radius: 10px;
-  /* Rounded corners */
   font-size: 18px;
-  /* Increase font size */
   box-shadow: 0 5px 10px 0px #0d0d0d; }
 
 .scroll-up {
   height: 25px; }
 
 #scroll-arriba:hover {
-  background-color: #3d8d41;
-  /* Add a dark-grey background on hover */ }
+  background-color: #3d8d41; }
 
 .footer_redes {
   padding: 10px;
@@ -315,13 +305,13 @@ input[type=reset] {
   /* Large devices (laptops/desktops, 992px and up) */ }
   @media only screen and (max-width: 600px) {
     .firstCard {
-      margin-top: 250px; } }
+      margin-top: 40px; } }
   @media only screen and (min-width: 600px) {
     .firstCard {
-      margin-top: 175px; } }
+      margin-top: 45px; } }
   @media only screen and (min-width: 768px) {
     .firstCard {
-      margin-top: 180px; } }
+      margin-top: 48px; } }
   @media only screen and (min-width: 992px) {
     .firstCard {
       margin-top: 100px; } }
