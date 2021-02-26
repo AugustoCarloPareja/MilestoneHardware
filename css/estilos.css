@@ -592,7 +592,7 @@ input[type=reset] {
       transform: none; } }
 
 .lineaDivisora {
-  border-left: 2px solid #2ec21a; }
+  border-bottom: 2px solid #2ec21a; }
 
 .cardsCompras {
   background-color: #a5a5a570;
@@ -604,16 +604,26 @@ input[type=reset] {
   /* Large devices (laptops/desktops, 992px and up) */ }
   @media only screen and (max-width: 600px) {
     .cardsCompras {
-      min-width: 220px; } }
+      min-width: 260px; } }
   @media only screen and (min-width: 600px) {
     .cardsCompras {
       max-width: 230px; } }
   @media only screen and (min-width: 768px) {
     .cardsCompras {
-      max-width: 260px; } }
+      max-width: 240px; } }
   @media only screen and (min-width: 992px) {
     .cardsCompras {
       max-width: 450px; } }
+  .cardsCompras .btn-secondary, .cardsCompras .btn-secondary:not(:disabled):not(.disabled).active, .cardsCompras .btn-secondary:not(:disabled):not(.disabled):active, .cardsCompras .show > .btn-secondary.dropdown-toggle {
+    background-color: #404040;
+    border-color: #262626; }
+    .cardsCompras .btn-secondary:hover, .cardsCompras .btn-secondary:focus, .cardsCompras .btn-secondary:active, .cardsCompras .btn-secondary:not(:disabled):not(.disabled).active:hover, .cardsCompras .btn-secondary:not(:disabled):not(.disabled).active:focus, .cardsCompras .btn-secondary:not(:disabled):not(.disabled).active:active, .cardsCompras .btn-secondary:not(:disabled):not(.disabled):active:hover, .cardsCompras .btn-secondary:not(:disabled):not(.disabled):active:focus, .cardsCompras .btn-secondary:not(:disabled):not(.disabled):active:active, .cardsCompras .show > .btn-secondary.dropdown-toggle:hover, .cardsCompras .show > .btn-secondary.dropdown-toggle:focus, .cardsCompras .show > .btn-secondary.dropdown-toggle:active {
+      background-color: #262626 !important;
+      border-color: #737373 !important;
+      transition: all 0.2s ease; }
+  .cardsCompras .dropdown-item:active {
+    background-color: #262626 !important;
+    transition: all 0.2s ease; }
 
 .imagenCompras {
   max-height: 180px;
@@ -627,3 +637,14 @@ input[type=reset] {
   align-content: center;
   min-width: 150px;
   padding: 10px; }
+
+.botonComprar {
+  background-color: #3d8d41 !important;
+  border-color: none;
+  box-shadow: none;
+  color: white; }
+  .botonComprar:hover, .botonComprar:focus, .botonComprar:active {
+    background-color: #3d8d41 !important;
+    border-color: #737373 !important;
+    color: white;
+    transition: all 0.2s ease; }

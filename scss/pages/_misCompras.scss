@@ -24,7 +24,7 @@
 }
 
 .lineaDivisora {
-    border-left: 2px solid #2ec21a;
+    border-bottom: 2px solid #2ec21a;
 }
 
 // Optimización Cards de Compras
@@ -34,7 +34,7 @@
     margin-top: 25px;
     border-radius: 30px;
     @media only screen and (max-width: 600px) {
-        min-width: 220px;
+        min-width: 260px;
     }
     /* Small devices (portrait tablets and large phones, 600px and up) */
     @media only screen and (min-width: 600px) {
@@ -42,11 +42,27 @@
     }
     /* Medium devices (landscape tablets, 768px and up) */
     @media only screen and (min-width: 768px) {
-        max-width: 260px;
+        max-width: 240px;
     }
     /* Large devices (laptops/desktops, 992px and up) */
     @media only screen and (min-width: 992px) {
         max-width: 450px;
+    }
+
+    .btn-secondary, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+        background-color: $color-Normal;
+        border-color: $color-Dark;
+        
+        &:hover, &:focus, &:active{
+           background-color: $color-Dark !important; 
+           border-color: $color-ULight !important;
+           transition:(all .2s ease);
+        }
+    }
+
+    .dropdown-item:active {
+    background-color: $color-Dark !important; 
+    transition:(all .2s ease);
     }
 }
 
@@ -60,4 +76,18 @@
     @include centradoFlex;
     min-width: 150px;
     padding:10px;
+}
+
+.botonComprar {
+    background-color: $color-green !important;
+    border-color: none;
+    box-shadow: none;
+    color: white;
+
+    &:hover, &:focus, &:active {
+        background-color: $color-green !important; 
+        border-color: $color-ULight !important;
+        color: white;
+        transition:(all .2s ease);
+     }
 }
