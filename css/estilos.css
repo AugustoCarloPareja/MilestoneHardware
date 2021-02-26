@@ -236,6 +236,10 @@ input[type=reset] {
     text-align: right;
     font-size: 12px;
     text-shadow: 2px 2px 2px #404040; }
+    .footer_redes--autor a {
+      color: white;
+      text-decoration: none;
+      cursor: pointer; }
 
 .textoRedes:hover {
   cursor: pointer; }
@@ -290,7 +294,7 @@ input[type=reset] {
   /* Large devices (laptops/desktops, 992px and up) */ }
   @media only screen and (max-width: 600px) {
     .firstRow {
-      margin-top: 60px; } }
+      margin-top: 35px; } }
   @media only screen and (min-width: 600px) {
     .firstRow {
       margin-top: 35px; } }
