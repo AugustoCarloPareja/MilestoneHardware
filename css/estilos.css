@@ -616,7 +616,8 @@ input[type=reset] {
       max-width: 450px; } }
   .cardsCompras .dropdown .btn-secondary, .cardsCompras .dropdown .btn-secondary:not(:disabled):not(.disabled).active, .cardsCompras .dropdown .btn-secondary:not(:disabled):not(.disabled):active, .cardsCompras .dropdown .show > .btn-secondary.dropdown-toggle {
     background-color: #404040;
-    border-color: #262626; }
+    border-color: #262626;
+    padding: 15px; }
     .cardsCompras .dropdown .btn-secondary:hover, .cardsCompras .dropdown .btn-secondary:focus, .cardsCompras .dropdown .btn-secondary:active, .cardsCompras .dropdown .btn-secondary:not(:disabled):not(.disabled).active:hover, .cardsCompras .dropdown .btn-secondary:not(:disabled):not(.disabled).active:focus, .cardsCompras .dropdown .btn-secondary:not(:disabled):not(.disabled).active:active, .cardsCompras .dropdown .btn-secondary:not(:disabled):not(.disabled):active:hover, .cardsCompras .dropdown .btn-secondary:not(:disabled):not(.disabled):active:focus, .cardsCompras .dropdown .btn-secondary:not(:disabled):not(.disabled):active:active, .cardsCompras .dropdown .show > .btn-secondary.dropdown-toggle:hover, .cardsCompras .dropdown .show > .btn-secondary.dropdown-toggle:focus, .cardsCompras .dropdown .show > .btn-secondary.dropdown-toggle:active {
       background-color: #262626 !important;
       border-color: #737373 !important;

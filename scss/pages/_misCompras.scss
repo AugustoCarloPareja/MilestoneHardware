@@ -53,6 +53,7 @@
         .btn-secondary, .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
             background-color: $color-Normal;
             border-color: $color-Dark;
+            padding: 15px;
             
             &:hover, &:focus, &:active{
                background-color: $color-Dark !important; 
